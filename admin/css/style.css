@@ -1,0 +1,143 @@
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size:16px;
+	color: #676a81;
+    margin:0;
+}
+
+.center {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+nav {
+	margin: 0;
+	top: 0;
+	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0 3px 15px rgba(0,0,0,.2);
+	height: 70px;
+	padding: 0 ;
+}
+nav a {
+	display: inline-block;
+    color: #d92cf9;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 23px 0px 47px;
+    text-transform: uppercase;
+}
+nav p {
+	font-weight: 600;
+	font-size: 15px;
+	color: #555;
+}
+
+* {box-sizing: border-box}
+
+/* Style tab links */
+.tablink {
+  	background-color: #555;
+  	color: white;
+  	margin-top: 67px;
+  	float: left;
+  	border: none;
+  	outline: none;
+  	cursor: pointer;
+  	padding: 14px 8px;
+  	font-size: 15px;
+  	width: 20%;
+	}
+	
+.tablink:hover {
+  background-color: #777;
+}
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+	color: white;
+	display: none;
+	padding: 150px 0;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;  
+	}
+
+table {
+	width: calc(50% - 40px);
+	vertical-align: top;
+	padding: 10px;
+	border-radius: 8px;
+	box-shadow: none;
+}
+td {
+	width: 400px;
+}
+
+input select {
+	outline: none;
+	padding: 5px;
+	margin: 10px;
+	background-color: #eee;
+	border: thin solid #edd;
+	border-radius: 3px;
+}
+input.submit {
+	width: 400px;
+	color: white;
+	background-color: ;
+	text-align: center;
+}
+.menu_name {
+	color: #d92cf9;
+	text-transform: uppercase;
+	font-size: 20px;
+    font-weight: 600;
+}
+
+input.submit {
+	width: 275px;
+	color: white;
+	background-color: #676a81;
+	text-align: center;
+	padding: 5px;
+}
+
+.accordion {
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none; transition: 0.4s;
+}
+.panel {
+	padding: 0 5px;
+	display: none;
+	background-color: white;
+	overflow: auto;
+}
+.contact_sms {
+	padding: 0px;
+	font-size: small;
+	color: #555;
+	width: 100%;
+	overflow: scroll;
+	height: 500px;
+}
+.client-image {
+  	width: 50px;
+  	height: 50px;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+@media only screen and (max-width: 768px) {
+	.contact_sms {width: 300px;}
+}
