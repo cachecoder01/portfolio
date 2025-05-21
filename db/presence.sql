@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 14, 2025 at 12:29 AM
+-- Generation Time: May 19, 2025 at 08:03 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -54,6 +54,14 @@ CREATE TABLE `education` (
   `status` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
+--
+-- Dumping data for table `education`
+--
+
+INSERT INTO `education` (`id`, `start_date`, `finish_date`, `degree`, `school`, `location`, `description`, `certification`, `status`) VALUES
+(1, '2021', '2024', 'wassce', 'Government Science and Technical Garki', 'Area 3 Garki, Abuja, Nigeria.', '', '1747565468_1747525536944.jpg', 'ended'),
+(2, '2024', '2025', 'bsc computer science', 'university of abuja', 'fct abuja, nigeria', '', '', 'Ongoing');
+
 -- --------------------------------------------------------
 
 --
@@ -68,8 +76,16 @@ CREATE TABLE `experience` (
   `organisation` varchar(200) NOT NULL,
   `location` varchar(255) NOT NULL,
   `description` varchar(255) NOT NULL,
-  `certification` varchar(255) NOT NULL
+  `certification` varchar(255) NOT NULL,
+  `status` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `experience`
+--
+
+INSERT INTO `experience` (`id`, `start_date`, `finish_date`, `program`, `organisation`, `location`, `description`, `certification`, `status`) VALUES
+(1, '2024', '0', 'full-stack web development', 'freecodecamp', 'freecodecamp.org', 'HTML, CSS, JAVASCRIPT, PYTHON', '', 'Ongoing');
 
 -- --------------------------------------------------------
 
@@ -98,6 +114,13 @@ CREATE TABLE `portfolio` (
   `img` varchar(255) NOT NULL,
   `url` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `portfolio`
+--
+
+INSERT INTO `portfolio` (`id`, `title`, `description`, `img`, `url`) VALUES
+(1, 'e-commerce', 'A premium business website with cart and integrated payment gateway,  and admin panel for content management.', '1747571346_shik.png', '');
 
 -- --------------------------------------------------------
 
@@ -157,25 +180,25 @@ ALTER TABLE `testimonial`
 -- AUTO_INCREMENT for table `contact_form`
 --
 ALTER TABLE `contact_form`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `education`
 --
 ALTER TABLE `education`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `experience`
 --
 ALTER TABLE `experience`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `portfolio`
 --
 ALTER TABLE `portfolio`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `testimonial`

@@ -5,6 +5,13 @@
         <!-- meta data -->
         <meta charset="utf-8" />
   		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="google-site-verification" content="OwV15fx-6zzNxTrFIGt1YhLsHQLW-54JzEDtSCFBTDw" />
+        <meta name="description" content="Professional web developer showcasing skills, projects, and contact info. Let's build your next digital solution.">
+        <meta property="og:title" content="CacheCoder | Web Developer Portfolio">
+        <meta property="og:description" content="Check out my web development work, skills, and contact options.">
+        <meta property="og:image" content="https://cachecoder.free.nf/assets/img/profile.jpg"> <!-- use a valid image URL -->
+        <meta property="og:url" content="https://cachecoder.free.nf">
+
   		<!-- Mobile Metas -->
   		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -13,36 +20,56 @@
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
         
         <!-- title of site -->
-        <title>cachecoder</title>
+        <title>CacheCoder | Web Developer Portfolio</title>
 
         <!-- For favicon png -->
 		<link rel="shortcut icon" type="image/icon" href="assets/logo/brand-logo.png"/>
        
         <!--font-awesome.min.css-->
-        <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
 		<!--flat icon css-->
-		<link rel="stylesheet" href="./assets/css/flaticon.css">
+		<link rel="stylesheet" href="assets/css/flaticon.css">
 
 		<!--animate.css-->
-        <link rel="stylesheet" href="./assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
 
         <!--owl.carousel.css-->
-        <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
-		<link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 		
         <!--bootstrap.min.css-->
-        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		
 		<!-- bootsnav -->
-		<link rel="stylesheet" href="./assets/css/bootsnav.css" >	
+		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
         
         <!--style.css-->
         <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style.css">
         
         <!--responsive.css-->
-        <link rel="stylesheet" href="./assets/css/responsive.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+
+        <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Oluwole Emmanuel Adewole",
+      "url": "https://cachecoder.free.nf",
+      "sameAs": [
+        "https://www.linkedin.com/in/cachecoder02",
+        "https://github.com/cachecoder01",
+        "https://twitter.com/cachecoder02"
+      ],
+  "jobTitle": "Web Developer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Freelancer"
+  }
+}
+</script>
+
         
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -219,9 +246,9 @@
 		</section><!--/.about-->
 		<!--about end -->
 		
-		<?php
+        <?php
 		include 'db/db_connect.php';
-		?>
+        ?>
 
 		<!--skills start -->
 		<section id="skills" class="skills">
@@ -610,7 +637,7 @@
 							</div>
 
 						</div><!-- /.row -->
-					</div>	<!-- /.container -->		
+					</div>	<!-- /.container -->
 				</div><!-- /.skill-content-->
 
 		</section><!--/.skills-->
@@ -665,7 +692,7 @@
 											if (empty($cert)) {
 												echo "Awaiting certificate";
 											}else {
-												echo '<img src="./assets/images/certificate/' .$cert. '" alt="school certificate" style="max-width: 250px; cursor: pointer;" onclick="openLightbox(this)">';
+												echo '<img src="./assets/images/certificate/' .$cert. '" alt="school certificate" loading="lazy" style="max-width: 250px; cursor: pointer;" onclick="openLightbox(this)">';
 												}
 										echo '</div><!--/.timeline-content-->
 											</div><!--/.timeline-->
@@ -707,7 +734,7 @@
 										$location=$row["location"];
 										$desc=$row["description"];
 										$cert=$row["certification"];
-										$status=$row["status"];
+                                        $status=$row["status"];
 										$empty="";
 
 									echo '<li>
@@ -723,7 +750,7 @@
 														}else{
 															echo ' - ' .$f_date. '';
 														}
-														if ($status=="Ongoing") {
+                                                        if ($status=="Ongoing") {
 													echo '(Ongoing)';
 												}
 												echo '</h2>
@@ -742,7 +769,7 @@
 											if (empty($cert)) {
 												echo "Awaiting certificate";
 											}else {
-												echo '<img src="./assets/images/certificate/' .$cert. '" alt="school certificate" style="max-width: 250px; cursor: pointer;" onclick="openLightbox(this)">';
+												echo '<img src="./assets/images/certificate/' .$cert. '" alt="certificate" loading="lazy" style="max-width: 250px; cursor: pointer;" onclick="openLightbox(this)">';
 												}
 												echo '</div><!--/.timeline-content-->
 												</div><!--/.timeline-->
@@ -757,7 +784,7 @@
 														}else{
 															echo ' - ' .$f_date. '';
 														}
-														if ($status=="Ongoing") {
+                                                        if ($status=="Ongoing") {
 													echo '(Ongoing)';
 												}
 												echo '</h2>
@@ -810,7 +837,7 @@
 						  echo '<div class="col-sm-4">
 									<div class="item">
 									<a href="' .$url. '" target="_blank">
-										<img src="assets/images/portfolio/' .$img. '" alt="portfolio image" />
+										<img src="assets/images/portfolio/' .$img. '" alt="portfolio image" loading="lazy"/>
 										<div class="isotope-overlay" style="color: white;">
 											' .$title. '
 										</div><!-- /.isotope-overlay -->
@@ -860,7 +887,7 @@
 					    echo '<div class="client-info">';
 		
 					    if (!empty($brand_logo)) {
-					    	echo '<img src="assets/images/clients/' .$brand_logo. '" alt="Client/brand-logo" class="client-image" />';
+					    	echo '<img src="assets/images/clients/' .$brand_logo. '" alt="Client/brand-logo" loading="lazy" class="client-image" />';
 					    };
 									        	
 				        echo '<div >
@@ -893,7 +920,7 @@
     				</div>
     				<div class="form-row">
     					<div class="form-group file-upload">
-    						<label for="brand_logo">Brand/Company Name</label>
+    						<label for="brand_name">Brand/Company Name</label>
     			  			<input type="text" name="brand_name" placeholder="or occupation/career path" required />
     					</div>
     					<div class="form-group file-upload">
@@ -927,7 +954,7 @@
 						<div class="col-md-offset-1 col-md-5 col-sm-6">
 							<div class="single-contact-box">
 								<div class="contact-form">
-									<form method="POST" action="contact_form.php">
+									<form method="POST" action="https://formsubmit.co/cachecoder212@gmail.com">
 										<div class="row">
 											<div class="col-sm-6 col-xs-12">
 												<div class="form-group">
@@ -992,7 +1019,7 @@
 									<ul>
 										<li><a href="https://github.com/cachecoder01" target="_blank"><i class="fa flaticon-github-logo fa-xs"></i></a></li><!--/li-->
 										<li><a href="https://x.com/cachecoder02?t=skGRf9R9h5azUDYV7BzraA&s=08" target="_blank"><i class="fa fa-twitter"></i></a></li><!--/li-->
-										<li><a href="https://www.linkedin.com/in/cachecoder02" target="_blank"><i class="fa fa-linkedin"></i></a></li><!--/li-->
+										<li><a href="https://www.linkedin.com/in/cachecoder02"><i class="fa fa-linkedin"></i></a></li><!--/li-->
 										<li><a href="https://wa.me/+2349136279768" target="_blank"><i class="fa fa-whatsapp"></i></a></li><!--/li-->
 									</ul><!--/ul-->
 								</div><!--/.hm-foot-icon-->
@@ -1028,37 +1055,37 @@
 		
 		<!-- Include all js compiled plugins (below), or include individual files as needed -->
 
-		<script src="./assets/js/jquery.js"></script>
+		<script src="assets/js/jquery.js"></script>
         
         <!--modernizr.min.js-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 		
 		<!--bootstrap.min.js-->
-        <script src="./assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
 		
 		<!-- bootsnav js -->
-		<script src="./assets/js/bootsnav.js"></script>
+		<script src="assets/js/bootsnav.js"></script>
 		
 		<!-- jquery.sticky.js -->
-		<script src="./assets/js/jquery.sticky.js"></script>
+		<script src="assets/js/jquery.sticky.js"></script>
 		
 		<!-- for progress bar start-->
 
 		<!-- progressbar js -->
-		<script src="./assets/js/progressbar.js"></script>
+		<script src="assets/js/progressbar.js"></script>
 
 		<!-- appear js -->
-		<script src="./assets/js/jquery.appear.js"></script>
+		<script src="assets/js/jquery.appear.js"></script>
 
 		<!-- for progress bar end -->
 
 		<!--owl.carousel.js-->
-        <script src="./assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 		        
         <!--Custom JS-->
-        <script src="./assets/js/custom.js"></script>
+        <script src="assets/js/custom.js"></script>
 
         <script>
  			window.addEventListener("load", function () {
