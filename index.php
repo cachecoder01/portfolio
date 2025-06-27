@@ -5,12 +5,12 @@
         <!-- meta data -->
         <meta charset="utf-8" />
   		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="google-site-verification" content="OwV15fx-6zzNxTrFIGt1YhLsHQLW-54JzEDtSCFBTDw" />
+        <meta name="google-site-verification" content="M_BzzCuOc6X-CDl8ivCR4P4eKLA-wog9Vv3kzMZu008" />
         <meta name="description" content="Professional web developer showcasing skills, projects, and contact info. Let's build your next digital solution.">
         <meta property="og:title" content="CacheCoder | Web Developer Portfolio">
         <meta property="og:description" content="Check out my web development work, skills, and contact options.">
-        <meta property="og:image" content="https://cachecoder.free.nf/assets/img/profile.jpg"> <!-- use a valid image URL -->
-        <meta property="og:url" content="https://cachecoder.free.nf">
+        <meta property="og:image" content="https://cachecoder.site/assets/img/profile.jpg"> <!-- use a valid image URL -->
+        <meta property="og:url" content="https://cachecoder.site">
 
   		<!-- Mobile Metas -->
   		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -56,7 +56,7 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Oluwole Emmanuel Adewole",
-      "url": "https://cachecoder.free.nf",
+      "url": "https://cachecoder.site",
       "sameAs": [
         "https://www.linkedin.com/in/cachecoder02",
         "https://github.com/cachecoder01",
@@ -859,6 +859,117 @@
 
 		</section><!--/.portfolio-->
 		<!--portfolio end -->
+
+		<!--Product start -->
+		<section id="" class="profiles">
+			<div class="profiles-details">
+				<div class="section-heading text-center">
+					<h2>Digital Products</h2>
+				</div>
+
+				<div class="container">
+					<div class="profiles-content">
+
+						<div class="row">
+
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-themeforest"></i></a>
+										<div class="profile-icon-name">themeforest</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-themeforest"></i></a>
+											<div class="profile-icon-name">themeforest</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-behance-logo"></i></a>
+										<div class="profile-icon-name">behance</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-behance-logo"></i></a>
+											<div class="profile-icon-name">behance</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-behance-logo"></i></a>
+										<div class="profile-icon-name">behance</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-behance-logo"></i></a>
+											<div class="profile-icon-name">behance</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-fiverr-logo"></i></a>
+										<div class="profile-icon-name">behance</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-fiverr-logo"></i></a>
+											<div class="profile-icon-name">fiverr</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-upwork-logo"></i></a>
+										<div class="profile-icon-name">behance</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-upwork-logo"></i></a>
+											<div class="profile-icon-name">upwork</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-behance-logo"></i></a>
+										<div class="profile-icon-name">behance</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-behance-logo"></i></a>
+											<div class="profile-icon-name">behance</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<!--Products end -->
 
 		<!--clients start -->
 		<section id="clients">

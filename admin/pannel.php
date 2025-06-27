@@ -6,6 +6,21 @@ if (! isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tr
 }
 ?>
 
+<?php
+	include '../db/db_connect.php';
+	$em=$_SESSION['email'];
+	$stmt = $conn->prepare("SELECT * FROM reginfo WHERE email = ?");
+    $stmt->bind_param("s", $em);
+    $stmt->execute();
+
+    $result=$stmt->get_result();
+    if ($result->num_rows > 0) {
+    	while ($row = $result->fetch_assoc()) {
+    		$email=$row["email"];
+    	}
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -18,26 +33,120 @@ if (! isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tr
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+		<style type="text/css">
+			
+#header {
+	margin: 0;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	padding: 15px;
+	background-color: #15161D;
+	color: white;
+}
+.brand_logo {
+	padding: 5px;
+	float: left;
+}
+.brand_name {
+	float: left;
+}
+.profile {
+	float: right;
+	margin-right: 40px;
+	display: flex;
+	flex: wrap;
+	padding: 3px;
+	margin-top: 20px;
+}
+.menu {
+	width: 100%; margin-top: 40px;  font-size: x-small;
+}
+@media only screen and (max-width: 768px){
+	.profile {
+		margin-top: 3px;
+	}
+	.menu {
+		margin-top: 75px;
+	}
+}
+
+.dropdown {
+	overflow: hidden;
+	margin: 0;
+}
+.dropbtn, .dropbtn:focus { 
+	padding: 3px;
+	padding-left: 5px;
+	margin-right: 40px;
+	background-color: inherit;
+	color: white;
+	border: none;
+}
+.dropdown-content {
+	display: none;
+	margin-top: 10px;
+	position: absolute;
+	background-color: purple;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
+	z-index: 9;
+	border-radius: 2px;
+	padding: 3px;}
+.dropdown-content a {
+	color: white;
+	padding: 3px;
+	text-decoration: none;
+	display: block;
+	z-index: 9;
+}
+.show {
+	display: block;
+	z-index: 2;
+}
+		</style>
 		
 	<body>
-		<!-- head section -->
-		<nav>
-			<div>
-				<div style="text-align: left; padding-left: 5px;">
-					<a class="navbar-brand">...YOUR IDEA, <p style="display: inline;">cached and delivered.</p></a>
 
+	<div style="position: fixed; width: 100%;">
+
+		<div id="header">
+			<div class="brand_logo">
+				<img src="../assets/logo/brand-logo.png" width="50">
+			</div>
+			<div class="brand_name">
+				<h1 class="brand">Cachecoder<div style="display: inline; color: purple;">.</div></h1>
+			</div>
+
+			<div class="profile">
+				<div style="padding: 3px; padding-right: 5px; border-right: thin solid purple;">
+					<i class="fas fa-user"></i>
+				</div>
+				<div style="padding: 5px;">
+					<?= $email ?>
+				</div>
+				<div style="">
+					<button onclick="myfunction()" class="dropbtn"><i class="fa fa-caret-down"></i></button>
+                  		<span>
+                  			<div id="myDropdown" class="dropdown-content">
+                    			<div>
+                      				<a onclick="return confirm('Are you sure you want to LogOut?')" href="logout.php">LogOut <i class="fa fa-sign-out"></i></a>
+                      			</div>
+                      		</div>
+                  		</span>
 				</div>
 			</div>
-		</nav>
-		<!-- /head section -->
+		</div>
 		
-			<div style="width: 100%; font-size: x-small;">
-				<div><button class="tablink" onclick="openPage('Home', this, 'purple')" >Expertise</button></div>
-				<div><button class="tablink" onclick="openPage('News', this, 'purple')" >Education</button></div>
-				<div><button class="tablink" onclick="openPage('Contact', this, 'purple')">Experience</button></div>
-				<div><button class="tablink" onclick="openPage('About', this, 'purple')">Portfolio</button></div>
-				<div><button class="tablink" onclick="openPage('Clients', this, 'purple')" id="defaultOpen">Clients</button></div>
-			</div>
+		<div class="menu" style="">
+			<div><button class="tablink" onclick="openPage('Home', this, 'purple')" >Expertise</button></div>
+			<div><button class="tablink" onclick="openPage('News', this, 'purple')" >Education</button></div>
+			<div><button class="tablink" onclick="openPage('Contact', this, 'purple')">Experience</button></div>
+			<div><button class="tablink" onclick="openPage('About', this, 'purple')">Portfolio</button></div>
+			<div><button class="tablink" onclick="openPage('Clients', this, 'purple')" id="defaultOpen">Clients</button></div>
+		</div>
+
+	</div>
 
 		<main>
 			<!-- expertise section-->
@@ -109,8 +218,8 @@ if (! isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tr
 									<legend style="color: #555;">Location</legend>
 									<input type="text" name="location" placeholder="Input Location" required="">
 								</fieldset>
-								<fieldset>
-									<legend style="color: #555;">Certificaion Obtained</legend>
+								<fieldset style="color: #555;">
+									<legend >Certificaion Obtained</legend>
 									<input type="text" name="description" placeholder="Description">
 									<br><br>
 									<input type="file" name="certificate" accept="image/*" >
@@ -137,12 +246,12 @@ if (! isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tr
 									<input type="number" name="id" min="1" placeholder="Input Id" required="">
 								</fieldset>
 								<fieldset style="color: #555;">
-									<legend>Period Of Program</legend>
+									<legend >Period Of Program</legend>
 									<label style="color: #555;">From:</label>
-									<input style="width: 70px;" type="number" name="from" placeholder="Date" required="">
+									<input style="width: 70px;" type="number" name="from" placeholder="Start_Date" required="">
 									<label style="color: #555;">- To:</label>
-									<input style="width: 70px;" type="number" name="to" placeholder="Date"><br>
-									<input type="checkbox" name="status" value="Ongoing"> Ongoing
+									<input style="width: 70px;" type="number" name="to" placeholder="Finish_Date"><br>
+                                    <input type="checkbox" name="status" value="Ongoing"> Ongoing
 								</fieldset>
 								<fieldset>
 									<legend style="color: #555;">Program/Course</legend>
@@ -156,8 +265,8 @@ if (! isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tr
 									<legend style="color: #555;">Location</legend>
 									<input type="text" name="location" placeholder="Input Location">
 								</fieldset>
-								<fieldset>
-									<legend style="color: #555;">Certificaion Obtained</legend>
+								<fieldset style="color: #555;">
+									<legend >Certificaion Obtained</legend>
 									<input type="text" name="description" placeholder="Description">
 									<br><br>
 									<input type="file" name="cert" accept="image/*" >
@@ -191,12 +300,12 @@ if (! isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tr
 									<legend style="color: #555;">Description</legend>
 									<input type="text" name="discription" placeholder="Input Description About Project" required="">
 								</fieldset>
-								<fieldset>
+								<fieldset style="color: #555;">
 									<legend style="color: #555;">Image/Logo</legend>
 									<input type="file" name="img" accept="image/*" required="">
 								</fieldset>
-								<fieldset>
-									<legend style="color: #555;">Project Link</legend>
+								<fieldset style="color: #555;">
+									<legend >Project Link</legend>
 									<input type="text" name="link" placeholder="Input Project Link">
 								</fieldset><br>
 								<div class="center">
@@ -327,10 +436,20 @@ if (! isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tr
 			
 		</main>
 
-		<footer>
-			<form method="POST" action="logout.php" onsubmit="return confirm('Are you sure you want to LOGOUT?')">
-			<button type="submit" style="float: right; border: 2px solid #777; padding: 5px; margin: 50px;">LOGOUT</button>
-		</footer>
+		<script>
+    		function myfunction() {
+    		  document.getElementById("myDropdown").classList.toggle("show");
+    		}
+    		window.onclick=function (event) {
+    		  if (!event.target.matches('.dropbtn')) {var dropdowns = document.getElementByClassName("dropdown-content");
+    		    var i;
+    		    for (i = 0; i < dropdowns.length; i++) {
+    		      var openDropdown = dropdowns[i];
+    		      if (openDropdown.classList.contains('show')) {openDropdown.classlist.remove('show');}
+    		      }
+    		    }   
+    		  }
+  		</script>
 
 		<script>
 			function openPage(pageName,elmnt,color) {
