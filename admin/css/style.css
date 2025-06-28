@@ -60,7 +60,7 @@ nav p {
 .tabcontent {
 	color: white;
 	display: none;
-	padding: 150px 0;
+	padding: 200px 0;
 	height: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -140,4 +140,70 @@ input.submit {
 }
 @media only screen and (max-width: 768px) {
 	.contact_sms {width: 300px;}
+	.profile {
+		margin-top: 3px;
+	}
+	.menu {
+		margin-top: 75px;
+	}
+}
+#header {
+	margin: 0;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	padding: 15px;
+	background-color: #15161D;
+	color: white;
+}
+.brand_logo {
+	padding: 5px;
+	float: left;
+}
+.brand_name {
+	float: left;
+}
+.profile {
+	float: right;
+	margin-right: 40px;
+	display: flex;
+	flex: wrap;
+	padding: 3px;
+	margin-top: 20px;
+}
+.menu {
+	width: 100%; margin-top: 40px;  font-size: x-small;
+}
+
+.dropdown {
+	overflow: hidden;
+	margin: 0;
+}
+.dropbtn, .dropbtn:focus { 
+	padding: 3px;
+	padding-left: 5px;
+	margin-right: 40px;
+	background-color: inherit;
+	color: white;
+	border: none;
+}
+.dropdown-content {
+	display: none;
+	margin-top: 10px;
+	position: absolute;
+	background-color: purple;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
+	z-index: 9;
+	border-radius: 2px;
+	padding: 3px;}
+.dropdown-content a {
+	color: white;
+	padding: 3px;
+	text-decoration: none;
+	display: block;
+	z-index: 9;
+}
+.show {
+	display: block;
+	z-index: 2;
 }

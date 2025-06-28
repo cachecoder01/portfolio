@@ -104,6 +104,15 @@ if (! isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tr
 	display: block;
 	z-index: 2;
 }
+.tabcontent {
+	color: white;
+	display: none;
+	padding: 200px 0;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;  
+	}
 		</style>
 		
 	<body>

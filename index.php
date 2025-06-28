@@ -124,7 +124,13 @@
 			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 			                    <i class="fa fa-bars"></i>
 			                </button>
-			                <a class="navbar-brand" href="index.php" style="font-size: 16px;">...YOUR IDEA, <p style="display: inline; font-size: 13px;">cached and delivered.</p></a>
+			                <div class="brand_logo">
+				<img src="../assets/logo/brand-logo.png" width="50">
+			</div>
+			<div class="brand_name">
+				<h1 class="brand">Cachecoder<div style="display: inline; color: purple;">.</div></h1>
+			</div>
+			                <a class="navbar-brand" href="index.php" style="font-size: 16px;"><img src="assets/logo/brand-logo.png" alt="brand-logo" class="logo" width="50"> ...YOUR IDEA, <p style="display: inline; font-size: 13px;">cached and delivered.</p></a>
 			            </div><!--/.navbar-header-->
 			            <!-- End Header Navigation -->
 
@@ -872,11 +878,11 @@
 
 						<div class="row">
 
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href=""><i class="flaticon-themeforest"></i></a>
-										<div class="profile-icon-name">themeforest</div>
+							<div class="col-sm-3" >
+								<div class="single-profile" >
+									<div class="profile-txt" >
+										<a href="" ><img src="assets/images/portfolio/1745937279_shik.png" width="250"></a>
+										<div class="profile-icon-name">safe-login-system ejhdhsc sdhsdf mmmrmrfn mfmfmkjfjd fjdfjk jfjfj jfjjf fmm</div>
 									</div>
 									<div class="single-profile-overlay">
 										<div class="profile-txt">
