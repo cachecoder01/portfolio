@@ -230,8 +230,6 @@ if (! isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tr
 								<fieldset style="color: #555;">
 									<legend >Certificaion Obtained</legend>
 									<input type="text" name="description" placeholder="Description">
-									<br><br>
-									<input type="file" name="certificate" accept="image/*" >
 								</fieldset><br>
 								<div class="center">
 									<input class="submit" type="submit" value="submit">
@@ -278,7 +276,7 @@ if (! isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tr
 									<legend >Certificaion Obtained</legend>
 									<input type="text" name="description" placeholder="Description">
 									<br><br>
-									<input type="file" name="cert" accept="image/*" >
+									<input type="text" name="cert" placeholder="Certificaion">
 								</fieldset><br>
 								<div class="center">
 									<input class="submit" type="submit" value="submit">

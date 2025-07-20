@@ -2,82 +2,71 @@
 <html class="no-js" lang="en">
 
     <head>
-        <!-- meta data -->
-        <meta charset="utf-8" />
+      <!-- meta data -->
+      <meta charset="utf-8" />
   		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="google-site-verification" content="M_BzzCuOc6X-CDl8ivCR4P4eKLA-wog9Vv3kzMZu008" />
-        <meta name="description" content="Professional web developer showcasing skills, projects, and contact info. Let's build your next digital solution.">
-        <meta property="og:title" content="CacheCoder | Web Developer Portfolio">
-        <meta property="og:description" content="Check out my web development work, skills, and contact options.">
-        <meta property="og:image" content="https://cachecoder.site/assets/img/profile.jpg"> <!-- use a valid image URL -->
-        <meta property="og:url" content="https://cachecoder.site">
+      <meta name="google-site-verification" content="M_BzzCuOc6X-CDl8ivCR4P4eKLA-wog9Vv3kzMZu008" />
+      <meta name="description" content="Professional web developer showcasing skills, projects, and contact info. Let's build your next digital solution.">
+      <meta property="og:title" content="CacheCoder | Web Developer Portfolio">
+      <meta property="og:description" content="Check out my web development work, skills, and contact options.">
+      <meta property="og:image" content="https://cachecoder.site/assets/img/profile.jpg"> <!-- use a valid image URL -->
+      <meta property="og:url" content="https://cachecoder.site">
 
   		<!-- Mobile Metas -->
   		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-        <!--font-family-->
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
-        
-        <!-- title of site -->
-        <title>CacheCoder | Web Developer Portfolio</title>
+  		<!-- title of site -->
+      <title>CacheCoder | Web Developer Portfolio</title>
 
-        <!-- For favicon png -->
-		<link rel="shortcut icon" type="image/icon" href="assets/logo/brand-logo.png"/>
-       
-        <!--font-awesome.min.css-->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+      <!-- For favicon png -->
+			<link rel="shortcut icon" type="image/icon" href="assets/logo/brand-logo.png"/>
 
-		<!--flat icon css-->
-		<link rel="stylesheet" href="assets/css/flaticon.css">
+      <!--font-family-->
+			<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
 
-		<!--animate.css-->
-        <link rel="stylesheet" href="assets/css/animate.css">
+      <!--font-awesome.min.css-->
+      <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
-        <!--owl.carousel.css-->
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+			<!--flat icon css-->
+			<link rel="stylesheet" href="assets/css/flaticon.css">
+
+			<!--animate.css-->
+      <link rel="stylesheet" href="assets/css/animate.css">
+
+      <!--owl.carousel.css-->
+      <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+			<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 		
-        <!--bootstrap.min.css-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <!--bootstrap.min.css-->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		
-		<!-- bootsnav -->
-		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
+			<!-- bootsnav -->
+			<link rel="stylesheet" href="assets/css/bootsnav.css" >	
         
-        <!--style.css-->
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/style.css">
+      <!--style.css-->
+      <link rel="stylesheet" href="./assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/style.css">
         
-        <!--responsive.css-->
-        <link rel="stylesheet" href="assets/css/responsive.css">
+      <!--responsive.css-->
+      <link rel="stylesheet" href="assets/css/responsive.css">
 
-        <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Oluwole Emmanuel Adewole",
-      "url": "https://cachecoder.site",
-      "sameAs": [
-        "https://www.linkedin.com/in/cachecoder02",
-        "https://github.com/cachecoder01",
-        "https://twitter.com/cachecoder02"
-      ],
-  "jobTitle": "Web Developer",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Freelancer"
-  }
-}
-</script>
-
-        
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		
-        <!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+      <script type="application/ld+json"> {
+      	"@context": "https://schema.org",
+      	"@type": "Person",
+      	"name": "Oluwole Emmanuel Adewole",
+      	"url": "https://cachecoder.site",
+      	"sameAs": [
+        	"https://www.linkedin.com/in/cachecoder02",
+        	"https://github.com/cachecoder01",
+        	"https://twitter.com/cachecoder02"
+      	],
+  			"jobTitle": "Web Developer",
+  			"worksFor": {
+    			"@type": "Organization",
+    			"name": "Freelancer"
+  			}
+			}
+			</script>
 
     </head>
 
@@ -98,6 +87,85 @@
     	td {
     		padding: 0 20px;
     	}
+
+
+.carousel-container {
+  position: relative;
+  width: 90%;
+  margin: 50px auto;
+  overflow: hidden;
+  background: #fff;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.product {
+  flex: 0 0 25%; /* 4 items on desktop */
+  box-sizing: border-box;
+  padding: 20px;
+  background: #fff;
+  border-right: 2px solid #fff;
+  border: thin solid #ccc;
+	text-align: center;
+  ol {
+  	list-style-type: square;
+  	text-align: left;
+  	margin-left: 8px;
+  }
+}
+.product:hover {
+	border: 2px solid #b636ff;
+}
+.product_title {
+	padding: 6px; text-align: center; color: #333;
+	text-transform: uppercase;
+}
+button.product {
+	border: 2px solid;
+	background-color: #b636ff;
+	color: white;
+	border-radius: 20px;
+	padding: 10px 18px;
+}
+button.product:hover {
+	background-color: white;
+	color: #b636ff;
+}
+/* Mobile View */
+@media (max-width: 768px) {
+  .product {
+    flex: 0 0 100%; /* 1 item on mobile */
+  }
+}
+
+.navv {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #00000088;
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
     </style>
 	
 	<body>
@@ -105,7 +173,7 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 		
-        <!-- Preloader -->
+    <!-- Preloader -->
 		<div id="preloader">
 			<img src="assets/logo/brand-logo.png" alt="brand-logo" class="logo" width="200">
 			<h2 class="preloader-text"><span><a class="navbar-brand" style="font-weight: bold;">...YOUR IDEA, <p style="display: inline;">cached and delivered.</p></a></span><p style="text-align: center; font-weight: bold; font-size: 20px;">Loading ...</p></h2>
@@ -124,13 +192,17 @@
 			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 			                    <i class="fa fa-bars"></i>
 			                </button>
-			                <div class="brand_logo">
-				<img src="../assets/logo/brand-logo.png" width="50">
-			</div>
-			<div class="brand_name">
-				<h1 class="brand">Cachecoder<div style="display: inline; color: purple;">.</div></h1>
-			</div>
-			                <a class="navbar-brand" href="index.php" style="font-size: 16px;"><img src="assets/logo/brand-logo.png" alt="brand-logo" class="logo" width="50"> ...YOUR IDEA, <p style="display: inline; font-size: 13px;">cached and delivered.</p></a>
+
+			                <a class="navbar-brand" href="index.php" style="display: flex; flex: wrap;">
+			                	<div>
+			                		<img src="assets/logo/brand-logo.png" alt="brand-logo" class="logo" width="60">
+			                	</div>
+			                	<div style="margin-top: 18px;">
+			                		<p style="display: inline-block; color: #d92cf9; font-size: 20px; font-weight: 600;">
+			                	 		...YOUR IDEA, <span style="display: inline; color: #d92cf9; font-size: 16px;">cached and delivered.</span>
+			                		</p>
+			                	</div>
+			                </a>
 			            </div><!--/.navbar-header-->
 			            <!-- End Header Navigation -->
 
@@ -182,7 +254,7 @@
 					<div class="row">
 						<div class="col-sm-offset-1 col-sm-5">
 							<div class="single-about-img">
-								<img src="assets/images/about/me1.jpg" alt="profile_image">
+								<img src="assets/images/about/me3.jpg" alt="profile_image" width="460">
 								<div class="about-list-icon">
 									<ul>
 										<li>
@@ -308,7 +380,7 @@
 										if ($result->num_rows>0) {
 										echo '<tr>
 											<td style="padding-bottom: 10px;">
-												<a href="#experience">view certification <i class="fa fa-arrow-right"></i></a>
+												<a href="#experience">view certification <i class="fa fa-arrow-down"></i></a>
 											</td>
 										</tr>';
 										}
@@ -361,7 +433,7 @@
 										if ($result->num_rows>0) {
 										echo '<tr>
 											<td style="padding-bottom: 10px;">
-												<a href="#experience">view certification <i class="fa fa-arrow-right"></i></a>
+												<a href="#experience">view certification <i class="fa fa-arrow-down"></i></a>
 											</td>
 										</tr>';
 										}
@@ -415,7 +487,7 @@
 										if ($result->num_rows>0) {
 										echo '<tr>
 											<td style="padding-bottom: 10px;">
-												<a href="#experience">view certification <i class="fa fa-arrow-right"></i></a>
+												<a href="#experience">view certification <i class="fa fa-arrow-down"></i></a>
 											</td>
 										</tr>';
 										}
@@ -468,7 +540,7 @@
 										if ($result->num_rows>0) {
 										echo '<tr>
 											<td style="padding-bottom: 10px;">
-												<a href="#experience">view certification <i class="fa fa-arrow-right"></i></a>
+												<a href="#experience">view certification <i class="fa fa-arrow-down"></i></a>
 											</td>
 										</tr>';
 										}
@@ -522,7 +594,7 @@
 										if ($result->num_rows>0) {
 										echo '<tr>
 											<td style="padding-bottom: 10px;">
-												<a href="#experience">view certification <i class="fa fa-arrow-right"></i></a>
+												<a href="#experience">view certification <i class="fa fa-arrow-down"></i></a>
 											</td>
 										</tr>';
 										}
@@ -577,7 +649,7 @@
 										if ($result->num_rows>0) {
 										echo '<tr>
 											<td style="padding-bottom: 10px;">
-												<a href="#experience">view certification <i class="fa fa-arrow-right"></i></a>
+												<a href="#experience">view certification <i class="fa fa-arrow-down"></i></a>
 											</td>
 										</tr>';
 										}
@@ -632,7 +704,7 @@
 										if ($result->num_rows>0) {
 										echo '<tr>
 											<td style="padding-bottom: 10px;">
-												<a href="#experience">view certification <i class="fa fa-arrow-right"></i></a>
+												<a href="#experience">view certification <i class="fa fa-arrow-down"></i></a>
 											</td>
 										</tr>';
 										}
@@ -670,7 +742,6 @@
 								$school=$row["school"];
 								$location=$row["location"];
 								$desc=$row["description"];
-								$cert=$row["certification"];
 								$status=$row["status"];
 
 								echo '<div class="col-sm-4">
@@ -693,12 +764,11 @@
 													<h4 class="title">
 														' .$school. '
 													</h4>
-													<h5>' .$location. '</h5>
-													<p class="description">' .$desc. '</p>';
-											if (empty($cert)) {
+													<h5>' .$location. '</h5>';
+											if (empty($desc)) {
 												echo "Awaiting certificate";
 											}else {
-												echo '<img src="./assets/images/certificate/' .$cert. '" alt="school certificate" loading="lazy" style="max-width: 250px; cursor: pointer;" onclick="openLightbox(this)">';
+												echo '<a style="text-decoration: underline;" href="' .$desc. '" target="_blank"><p class="description">view certification <i class="fa fa-arrow-right"></i></p></a>';
 												}
 										echo '</div><!--/.timeline-content-->
 											</div><!--/.timeline-->
@@ -740,7 +810,7 @@
 										$location=$row["location"];
 										$desc=$row["description"];
 										$cert=$row["certification"];
-                                        $status=$row["status"];
+                    $status=$row["status"];
 										$empty="";
 
 									echo '<li>
@@ -756,7 +826,7 @@
 														}else{
 															echo ' - ' .$f_date. '';
 														}
-                                                        if ($status=="Ongoing") {
+                        if ($status=="Ongoing") {
 													echo '(Ongoing)';
 												}
 												echo '</h2>
@@ -775,7 +845,7 @@
 											if (empty($cert)) {
 												echo "Awaiting certificate";
 											}else {
-												echo '<img src="./assets/images/certificate/' .$cert. '" alt="certificate" loading="lazy" style="max-width: 250px; cursor: pointer;" onclick="openLightbox(this)">';
+												echo '<a style="text-decoration: underline;" href="' .$cert. '" target="_blank"><p class="description">view certification <i class="fa fa-arrow-right"></i></p></a>';
 												}
 												echo '</div><!--/.timeline-content-->
 												</div><!--/.timeline-->
@@ -873,109 +943,44 @@
 					<h2>Digital Products</h2>
 				</div>
 
-				<div class="container">
-					<div class="profiles-content">
+				<div class="carousel-container">
+    			<button class="navv prev" onclick="prevSlide()">&#10094;</button>
+		
+    			<div class="carousel-wrapper">
+      			<div class="carousel-track" id="carouselTrack">
+        			<div class="product">
+        				<img src="assets/images/portfolio/loginsystem_landing_page.png" width="250">
+        				<h3 class="product_title">php auth system</h3>
+        				<h3 class="pricr" style="color: red">$5.00</h3>
+        				<ul>
+        					<li>FEATURES</li>
+        				</ul>
+        				<ol>
+        					<li>User Registration & Login, or Reset Password</li>
+        					<li>Form Validation & Error Handling</li>
+        					<li>Session-based Login Persistence</li>
+        				</ol>
+        				<button class="product" style="border: 4px solid ;"><i class="fa fa-shopping-cart"></i> GUMROAD</button>
+        			</div>
+        			<div class="product">Product 2</div>
+        			<div class="product">Product 3</div>
+        			<div class="product">Product 4</div>
+        			<div class="product">Product 5</div>
+        			<div class="product">Product 6</div>
+        			<div class="product">Product 7</div>
+        			<div class="product">Product 8</div>
+        			<div class="product">Product 9</div>
+        			<div class="product">Product 10</div>
+        			<div class="product">Product 11</div>
+        			<!-- Add as many products as you want -->
+     	  		</div>
+    			</div>
 
-						<div class="row">
-
-							<div class="col-sm-3" >
-								<div class="single-profile" >
-									<div class="profile-txt" >
-										<a href="" ><img src="assets/images/portfolio/1745937279_shik.png" width="250"></a>
-										<div class="profile-icon-name">safe-login-system ejhdhsc sdhsdf mmmrmrfn mfmfmkjfjd fjdfjk jfjfj jfjjf fmm</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><i class="flaticon-themeforest"></i></a>
-											<div class="profile-icon-name">themeforest</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href=""><i class="flaticon-behance-logo"></i></a>
-										<div class="profile-icon-name">behance</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><i class="flaticon-behance-logo"></i></a>
-											<div class="profile-icon-name">behance</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href=""><i class="flaticon-behance-logo"></i></a>
-										<div class="profile-icon-name">behance</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><i class="flaticon-behance-logo"></i></a>
-											<div class="profile-icon-name">behance</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href=""><i class="flaticon-fiverr-logo"></i></a>
-										<div class="profile-icon-name">behance</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><i class="flaticon-fiverr-logo"></i></a>
-											<div class="profile-icon-name">fiverr</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href=""><i class="flaticon-upwork-logo"></i></a>
-										<div class="profile-icon-name">behance</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><i class="flaticon-upwork-logo"></i></a>
-											<div class="profile-icon-name">upwork</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href=""><i class="flaticon-behance-logo"></i></a>
-										<div class="profile-icon-name">behance</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><i class="flaticon-behance-logo"></i></a>
-											<div class="profile-icon-name">behance</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-		</section>
-		<!--Products end -->
+    			<button class="navv next" onclick="nextSlide()">&#10095;</button>
+  			</div>
+  		</div>
+  	</section>
+  	<!--Product end-->
 
 		<!--clients start -->
 		<section id="clients">
@@ -1154,9 +1159,9 @@
 			<div class="container">
 				<div class="hm-footer-copyright text-center">
 					<p>
-          				&copy; <span id="displayYear"></span> All Rights Reserved Developed by 
-          				<a href="https://wa.me/+2349136279768" target="_blank">cachecoder</a>
-        			</p><!--/p-->
+						&copy; <span id="displayYear"></span> All Rights Reserved Developed by 
+          	<a href="https://wa.me/+2349136279768" target="_blank">cachecoder</a>
+        	</p><!--/p-->
 				</div><!--/.text-center-->
 			</div><!--/.container-->
 
@@ -1254,6 +1259,53 @@
 			}
 		</script>
 
-    </body>
-	
+		<script type="text/javascript">
+			let currentIndex = 0;
+const track = document.getElementById("carouselTrack");
+const wrapper = document.querySelector(".carousel-wrapper");
+
+function getSlideInfo() {
+  const products = document.querySelectorAll(".product");
+  const product = products[0];
+  if (!product) return { itemWidth: 0, maxIndex: 0 };
+
+  const itemWidth = product.offsetWidth;
+  const wrapperWidth = wrapper.offsetWidth;
+  const itemsPerView = Math.floor(wrapperWidth / itemWidth);
+  const maxIndex = products.length - itemsPerView;
+
+  return { itemWidth, maxIndex };
+}
+
+function showSlide(index) {
+  const { itemWidth, maxIndex } = getSlideInfo();
+
+  // Fix negative or too large index
+  currentIndex = Math.max(0, Math.min(index, maxIndex));
+
+  const distance = currentIndex * itemWidth;
+  track.style.transform = `translateX(-${distance}px)`;
+}
+
+function nextSlide() {
+  showSlide(currentIndex + 1);
+}
+
+function prevSlide() {
+  showSlide(currentIndex - 1);
+}
+
+// Run only after DOM fully loaded
+window.addEventListener("load", () => {
+  showSlide(0); // Start at beginning
+});
+
+// Update layout on resize
+window.addEventListener("resize", () => {
+  showSlide(currentIndex);
+});
+
+		</script>
+			
+	</body>	
 </html>
