@@ -147,7 +147,7 @@ if (! isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tr
 			</div>
 		</div>
 		
-		<div class="menu" style="">
+		<div class="menu" >
 			<div><button class="tablink" onclick="openPage('Home', this, 'purple')" >Expertise</button></div>
 			<div><button class="tablink" onclick="openPage('News', this, 'purple')" >Education</button></div>
 			<div><button class="tablink" onclick="openPage('Contact', this, 'purple')">Experience</button></div>

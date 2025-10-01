@@ -1,0 +1,308 @@
+@media only screen and (max-width: 700px) {
+    /*==== mobile header ====*/
+    .hero {
+        background-position: top;
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+    .brand {
+        padding: 0px 5px;
+    }
+    .brand-name {
+        margin-top: 0;
+        margin-top: -8px;
+    }
+    .brand-name h1 {
+        margin-bottom: -10px;
+        font-size: 25px;
+        padding: 0;
+    }
+    .brand-name span {
+        padding-left: 2px;
+        font-size: small;
+        margin-top: 0px;
+        padding: 0;
+    }
+    .brand-img {
+        width: 50px;
+        height: 50px;
+    }
+    .brand-img img {
+        width: 50px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hero-content {
+        width: 90%;
+        margin: 100px auto;
+    } 
+    .hero-content h2 {    
+        font-size: 35px;
+    }
+    .hero-cta {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+    .cta-button-dl {
+        width: 180px;
+        padding: 8px 5px;
+        font-size: small;
+    }
+    .cta-button-vw {
+        width: 150px;
+        padding: 5px;
+        font-size: small;
+    }
+
+    .menu {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .hamburger {
+        min-width: 30px;
+        width: 40px;
+        height: 24px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: none;
+        border: none;
+        z-index: 1000;
+    }      
+    .bar {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }    
+    .hamburger.open .bar:nth-child(1) {
+        transform: rotate(45deg) translateY(10px);
+    }  
+    .hamburger.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.open .bar:nth-child(3) {
+        transform: rotate(-45deg) translateY(-10px);
+    }
+    body.noscroll {
+        overflow: hidden;
+    }
+    
+    /*=== Side menu ===*/
+    .side-menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        background: #1c1e29;
+        color: white;
+        padding: 20px;
+        transition: left 0.3s ease;
+        z-index: 900;    
+    }
+    .side-menu.open {
+        left: 0;
+    }
+
+    /*=== section ===*/
+    .section-description {
+        font-size: 30px;
+    }
+    .tag {
+        color: #0a0f1f;;
+    }
+
+    /*=== About ===*/
+    .about {
+        margin: 70px auto -70px;
+        width: 80%;
+    }
+    .about .section-title {
+        display: none;
+    }
+    .about .section-title-mobile {
+    text-transform: uppercase;
+    font-size: small;
+    color: #310D0D;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    }
+    .about-child {
+        margin-bottom: 70px;
+    }
+    .about-img {
+        border: 10px solid #C5A253;
+        position: relative;
+        width: 250px;
+        height: 250px;
+    }
+    .about-img img {
+        position: absolute;
+        width: 250px;
+        top: 0px;
+        left: 0px;
+    }
+    .about-img img {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+
+    /*=== Newsletter ===*/
+    .newsletter {
+        display: none;
+    }
+    .footer-newsletter {
+        display: block;
+        text-align: center;
+    }
+
+    /*=== Contact ===*/
+    .contact {
+        width: 90%;
+        margin: 0 4%;
+    }
+    .contact-content {
+        flex-direction: column;
+    }
+    .contact .tag {
+        color: white;
+    }
+    .contact-info li {
+        width: 100%;
+    }
+    .copyrights {
+        flex-direction: column;
+        text-align: center;
+    }
+    .right {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*==== PORTFOLIO PAGE ====*/
+    .top-img {
+        height: 100px;
+    }
+    .top-img-text {
+        top: 20px;
+    }
+
+    /*==== VIEW_DETAILS PAGE ====*/
+    .product {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media only screen  and (max-width: 1030px) {
+    .nav-menu {
+        display: none;
+    }
+    .menu {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+    }
+    .hamburger {
+        min-width: 30px;
+        width: 40px;
+        height: 24px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: none;
+        border: none;
+        z-index: 1000;
+    }
+    .bar {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+    .hamburger.open .bar:nth-child(1) {
+        transform: rotate(45deg) translateY(10px);
+    }  
+    .hamburger.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.open .bar:nth-child(3) {
+        transform: rotate(-45deg) translateY(-10px);
+    }
+    body.noscroll {
+        overflow: hidden;
+    }
+
+    .side-menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 60%;
+        height: 100vh;
+        background: #1c1e29;
+        color: white;
+        padding: 20px;
+        transition: left 0.3s ease;
+        z-index: 900; 
+    }
+    .side-menu.open {
+        left: 0;
+    }
+
+    /*=== About ===*/
+    .about {
+        flex-direction: column;
+    }
+    .about .section-title-mobile {
+    text-transform: uppercase;
+    font-size: small;
+    color: #310D0D;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    }
+    .about .section-title{
+        display: none;
+    }    
+    .about-child {
+        margin-bottom: 70px;
+    }
+
+    /*=== Contact ===*/
+    .contact .submit {
+        width: 88%;
+    }
+}
+
+.side-menu ul a {
+    text-decoration: none;
+    color: white;
+}
+.side-menu ul li {
+    padding: 10px;
+    list-style-type: none;
+}
+.side-menu .social-links li {
+    display: inline;
+}
+.social-links li i {
+    font-size: 20px;
+
+}

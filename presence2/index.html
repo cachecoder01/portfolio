@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/images/app-images/brand-logo.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/fonts/css/all.min.css">
+
+    <title>CacheCodeR | Web Developer</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-child">
+                <div class="brand">
+                    <div class="brand-img">
+                        <img src="assets/images/app-images/brand-logo.png">
+                    </div>
+                    <div class="brand-name">
+                        <h1>CacheCodeR</h1>
+                        <span>... Your idea, cached & delivered.</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nav-menu-container">
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Portfolio">Portfolio</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                    <div class="social-links">
+                        <ul>                                
+                            <li><a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="" target="_blank"><i class="fab fa-github"></i></a></li>
+                            <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <button id="menu-toggle" class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </button>
+            </div>                
+
+            <div id="side-menu" class="side-menu">
+                <ul>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+                <div class="social-links">
+                    <ul>                                
+                        <li><a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+        <div class="hero">
+            <div class="hero-content">
+                <h2>Hello world<span>.</span></h2>
+                <div class="hero-cta">
+                    <div class="cta-button-dl"><a href="">Download Resume</a></div>
+                    <div class="cta-button-vw"><a href="" class="vw">View Resume</a></div>
+                </div> 
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section id="About">
+            <div class="title">About <span>Me</span></div>
+            <div class="about">
+                <div class="section-title-mobile">Who we are</div>
+                <div data-aos="fade-right" class="about-child">
+                    <div class="about-child-img">
+                        <div class="img-background">
+                            <img src="assets/images/app-images/me3.png" >
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="about-child">
+                    <div class="about-text">
+                        <div class="hello">Hello, it's me</div>
+                        <h2 class="name">OLUWOLE EMMANUEL A.</h2>
+                        <div class="tag">i'm a <span>Full-Stack Engineer | Web Developer</span></div>
+                        <p>Also known as CacheCodeR is a creative company with two strong branches. The first is our Agency. We discover, support, and showcase poets and fine writers, bringing words to life in their purest form. The second is our Podcast. We focus on toxic families and relationships, giving voice to experiences that are often silenced. Together, these two arms reflect our mission to use words as a tool for art, healing, and truth.</p>
+                        <div class="cta-button">
+                            <div class="cta-button-about works"><a href="#Portfolio">My works <i class="fa fa-arrow-right"></i></a></div>
+                            <div class="cta-button-about contact"><a href="#Contact">Contact me <i class="fa fa-arrow-right"></i></a></div> 
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </section>
+
+        <section id="Services">
+            <div class="title">About <span>Me</span></div>
+        </section>
+    </main>
+
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/aos.js"></script>
+    
+    <script>
+        AOS.init({
+            duration: 800, // animation duration (ms)
+            offset: 120,   // trigger point
+            once: true,    // animate only once
+        });
+    </script>
+
+    <script>
+        const startYear = 2024;
+        const currentYear = new Date().getFullYear();
+        const footerDateEl = document.getElementById("footerDate");
+
+        if (footerDateEl) {
+        footerDateEl.textContent =
+            `© ${startYear}` + (currentYear > startYear ? ` - ${currentYear}` : '');
+        }
+    </script>
+</body>
+</html>

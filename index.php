@@ -71,23 +71,13 @@
     </head>
 
     <style type="text/css">
-    	.welcome-hero{
-    		background:url(assets/logo/heroimg.jpg)no-repeat;
-    		height:590px;
+    	body {
+    		background-color: #0f172a;
+    		color: #cbd5e1;
     	}
-    	@media only screen and (max-width: 768px) {
-    		.welcome-hero{
-    		background:url(assets/logo/heroimg_m.jpg)no-repeat;
-    		height:490px;
-    		}
+    	button:hover {
+    		background-color: #c026d3;
     	}
-    	table {
-    		width: 100%;
-    	}
-    	td {
-    		padding: 0 20px;
-    	}
-
 
 .carousel-container {
   position: relative;
