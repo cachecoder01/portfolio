@@ -34,30 +34,6 @@
     .nav-menu {
         display: none;
     }
-
-    .hero-content {
-        width: 90%;
-        margin: 100px auto;
-    } 
-    .hero-content h2 {    
-        font-size: 35px;
-    }
-    .hero-cta {
-        display: flex;
-        gap: 15px;
-        justify-content: center;
-    }
-    .cta-button-dl {
-        width: 180px;
-        padding: 8px 5px;
-        font-size: small;
-    }
-    .cta-button-vw {
-        width: 150px;
-        padding: 5px;
-        font-size: small;
-    }
-
     .menu {
         position: absolute;
         right: 20px;
@@ -114,6 +90,29 @@
         left: 0;
     }
 
+    .hero-content {
+        width: 90%;
+        margin: 100px auto;
+    } 
+    .hero-content h2 {    
+        font-size: 35px;
+    }
+    .hero-cta {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+    .cta-button-dl {
+        width: 180px;
+        padding: 8px 5px;
+        font-size: small;
+    }
+    .cta-button-vw {
+        width: 150px;
+        padding: 5px;
+        font-size: small;
+    }
+
     /*=== section ===*/
     .section-description {
         font-size: 30px;
@@ -124,48 +123,45 @@
 
     /*=== About ===*/
     .about {
-        margin: 70px auto -70px;
-        width: 80%;
+        width: 90%;
+        margin: 50px auto;
+        margin-bottom: 0;
     }
-    .about .section-title {
-        display: none;
+    .about-child-img {
+        height: 400px;
     }
-    .about .section-title-mobile {
-    text-transform: uppercase;
-    font-size: small;
-    color: #310D0D;
-    font-weight: bold;
-    margin-bottom: 10px;
-    display: block;
+    .img-background {
+        width: 267px;
+        height: 280px;
+        margin-bottom: 0;
     }
-    .about-child {
-        margin-bottom: 70px;
-    }
-    .about-img {
-        border: 10px solid #C5A253;
-        position: relative;
-        width: 250px;
-        height: 250px;
-    }
-    .about-img img {
+    .img-background img {
         position: absolute;
-        width: 250px;
-        top: 0px;
-        left: 0px;
+        bottom: 0;
+        left: 0;
+        width: 270px;
     }
-    .about-img img {
-        position: absolute;
-        top: 40px;
-        left: 40px;
+    .about-text {
+        padding-top: 0px;
+    }
+    .about .cta-button {
+        width: 100%;
+    }
+    .about .works {
+        padding: 5px;
+    }
+    .about .contact {
+        padding: 5px;
     }
 
-    /*=== Newsletter ===*/
-    .newsletter {
-        display: none;
+    /*==== Projects ====*/
+    .projects-container img {
+        width: 320px;
     }
-    .footer-newsletter {
-        display: block;
-        text-align: center;
+
+    /*=== cert ===*/
+    .cert-container {
+        width: 300px;
     }
 
     /*=== Contact ===*/
@@ -192,19 +188,6 @@
         padding: 0;
     }
 
-    /*==== PORTFOLIO PAGE ====*/
-    .top-img {
-        height: 100px;
-    }
-    .top-img-text {
-        top: 20px;
-    }
-
-    /*==== VIEW_DETAILS PAGE ====*/
-    .product {
-        flex-direction: column;
-        gap: 10px;
-    }
 }
 
 @media only screen  and (max-width: 1030px) {
@@ -269,17 +252,6 @@
     /*=== About ===*/
     .about {
         flex-direction: column;
-    }
-    .about .section-title-mobile {
-    text-transform: uppercase;
-    font-size: small;
-    color: #310D0D;
-    font-weight: bold;
-    margin-bottom: 10px;
-    display: block;
-    }
-    .about .section-title{
-        display: none;
     }    
     .about-child {
         margin-bottom: 70px;
