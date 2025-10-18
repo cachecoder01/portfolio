@@ -8,10 +8,36 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
     <link rel="stylesheet" href="assets/fonts/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css" />
 
     <title>CacheCodeR | Web Developer</title>
+
+    <script type="application/ld+json"> {
+      	"@context": "https://schema.org",
+      	"@type": "Person",
+      	"name": "Oluwole Emmanuel Adewole",
+      	"url": "https://cachecoder.site",
+      	"sameAs": [
+        	"https://www.linkedin.com/in/cachecoder02",
+        	"https://github.com/cachecoder01",
+        	"https://twitter.com/cachecoder02"
+      	],
+  			"jobTitle": "Web Developer",
+  			"worksFor": {
+    			"@type": "Organization",
+    			"name": "Freelancer"
+  			}
+		}
+	</script>
+
 </head>
 <body>
+    <!-- Preloader -->
+	<div id="preloader">
+		<img src="assets/logo/brand-logo.png" alt="brand-logo" class="logo" width="200">
+		<h2 class="preloader-text"><span><a class="navbar-brand" style="font-weight: bold;">...YOUR IDEA, <p style="display: inline;">cached and delivered.</p></a></span><p style="text-align: center; font-weight: bold; font-size: 20px;">Loading ...</p></h2>
+	</div>
+
     <header>
         <nav>
             <div class="nav-child">
@@ -37,9 +63,9 @@
                     </ul>
                     <div class="social-links">
                         <ul>                                
-                            <li><a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="" target="_blank"><i class="fab fa-github"></i></a></li>
-                            <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/cachecoder02" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/cachecoder01" target="_blank"><i class="fab fa-github"></i></a></li>
+                            <li><a href="https://x.com/cachecoder02?t=skGRf9R9h5azUDYV7BzraA&s=08" target="_blank"><i class="fab fa-twitter"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -58,25 +84,24 @@
                     <li><a href="#About">About</a></li>
                     <li><a href="#Expertise">Expertise</a></li>
                     <li><a href="#Services">Services</a></li>
-                        <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Projects">Projects</a></li>
                     <li><a href="#Contact">Contact</a></li>
                 </ul>
                 <div class="social-links">
                     <ul>                                
-                        <li><a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="" target="_blank"><i class="fab fa-github"></i></a></li>
-                        <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/cachecoder02" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/cachecoder01" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://x.com/cachecoder02?t=skGRf9R9h5azUDYV7BzraA&s=08" target="_blank"><i class="fab fa-twitter"></i></a></li>
                     </ul>
                 </div>
             </div>
-
         </nav>
         <div class="hero">
             <div class="hero-content">
-                <h2>Hello world<span>.</span></h2>
-                <div class="hero-cta">
-                    <div class="cta-button-dl"><a href="">Download Resume</a></div>
-                    <div class="cta-button-vw"><a href="" class="vw">View Resume</a></div>
+                <h2 data-aos="fade-left">Hello world<span>.</span></h2>
+                <div class="hero-cta" >
+                    <div class="cta-button-dl"><a href="assets/download/cv.pdf" download>Download Resume</a></div>
+                    <div class="cta-button-vw"><a href="assets/download/cv.pdf" target="_blank" class="vw">View Resume</a></div>
                 </div> 
             </div>
         </div>
@@ -97,7 +122,9 @@
                         <div class="hello">Hello, it's me</div>
                         <h2 class="name">OLUWOLE EMMANUEL A.</h2>
                         <div class="tag">i'm a <span>Software Engineer | Full-Stack Web Developer</span></div>
-                        <p>Also known as CacheCodeR is a creative company with two strong branches. The first is our Agency. We discover, support, and showcase poets and fine writers, bringing words to life in their purest form. The second is our Podcast. We focus on toxic families and relationships, giving voice to experiences that are often silenced. Together, these two arms reflect our mission to use words as a tool for art, healing, and truth.</p>
+                        <p>AKA CacheCoder, a passionate and detail-driven developer dedicated to bringing your ideas to life. Welcome to my portfolio, where i showcase my journey through the world of technology and innovation.</p>
+                        <p>If you are looking for a developer who is not only skilled but also enthusiastic about staying up-to-date with the latest technologies, you are in the right place. My goal is to deliver high-quality solutions that exceed your expectations.</p>
+                        <p>.....Let's collaborate and turn your vision into a reality.</p>
                         <div class="cta-button">
                             <div class="cta-button-about works"><a href="#Projects">My works <i class="fa fa-arrow-right"></i></a></div>
                             <div class="cta-button-about contact"><a href="#Contact">Contact me <i class="fa fa-arrow-right"></i></a></div> 
@@ -108,7 +135,7 @@
         </section>
 
         <section id="Expertise">
-            <div class="expertise">
+            <div class="expertises">
                 <div class="section-title">Technical <span>Expertise</span></div>
                 <div class="section-description">My Stack & Tools</div>
                 <div class="expertise-container">
@@ -119,15 +146,47 @@
                                 <div class="lang">Html</div><div class="lang-range">95%</div>
                             </div>
                             <div class="progress-bar">
-                                <div class="progress" style="width: 90%; background-color: blue;"></div>
+                                <div data-aos="fade-right" class="progress blue" style="width: 95%;"></div>
                             </div>
                         </div>
                         <div class="progress-container">
                             <div class="progress-text">
-                                <div class="lang">Css</div><div class="lang-range">95%</div>
+                                <div class="lang">Modern Css</div><div class="lang-range">80%</div>
                             </div>
                             <div class="progress-bar">
-                                <div class="progress" style="width: 90%;background-color: blue;"></div>
+                                <div data-aos="fade-right" class="progress blue" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-text">
+                                <div class="lang">JavaScript</div><div class="lang-range">50%</div>
+                            </div>
+                            <div class="progress-bar">
+                                <div data-aos="fade-right" class="progress blue" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-text">
+                                <div class="lang">Responsive Design</div><div class="lang-range">90%</div>
+                            </div>
+                            <div class="progress-bar">
+                                <div data-aos="fade-right" class="progress blue" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-text">
+                                <div class="lang">Web Animation</div><div class="lang-range">65%</div>
+                            </div>
+                            <div class="progress-bar">
+                                <div data-aos="fade-right" class="progress blue" style="width: 65%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-text">
+                                <div class="lang">Tailwind Css</div><div class="lang-range">30%</div>
+                            </div>
+                            <div class="progress-bar">
+                                <div data-aos="fade-right" class="progress blue" style="width: 30%;"></div>
                             </div>
                         </div>
                     </a>
@@ -135,37 +194,85 @@
                         <div class="expertise-title"><span>⚡</span> Backend Development</div>
                         <div class="progress-container">
                             <div class="progress-text">
-                                <div class="lang">Html</div><div class="lang-range">95%</div>
+                                <div class="lang">Php</div><div class="lang-range">85%</div>
                             </div>
                             <div class="progress-bar">
-                                <div class="progress" style="width: 90%; background-color: green;"></div>
+                                <div data-aos="fade-right" class="progress green" style="width: 85%;"></div>
+                            </div>
+                        </div>                        
+                        <div class="progress-container">
+                            <div class="progress-text">
+                                <div class="lang">MySQL</div><div class="lang-range">90%</div>
+                            </div>
+                            <div class="progress-bar">
+                                <div data-aos="fade-right" class="progress green" style="width: 90%;"></div>
                             </div>
                         </div>
                         <div class="progress-container">
                             <div class="progress-text">
-                                <div class="lang">Css</div><div class="lang-range">95%</div>
+                                <div class="lang">Auth System</div><div class="lang-range">90%</div>
                             </div>
                             <div class="progress-bar">
-                                <div class="progress" style="width: 90%; background-color: green;"></div>
+                                <div data-aos="fade-right" class="progress green" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-text">
+                                <div class="lang">Form Handling & Vali..</div><div class="lang-range">90%</div>
+                            </div>
+                            <div class="progress-bar">
+                                <div data-aos="fade-right" class="progress green" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-text">
+                                <div class="lang">PHPMailer </div><div class="lang-range">90%</div>
+                            </div>
+                            <div class="progress-bar">
+                                <div data-aos="fade-right" class="progress green" style="width: 90%; "></div>
+                            </div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-text">
+                                <div class="lang">AdminDashboard Dev.</div><div class="lang-range">90%</div>
+                            </div>
+                            <div class="progress-bar">
+                                <div data-aos="fade-right" class="progress green" style="width: 90%;"></div>
                             </div>
                         </div>
                     </a>
                     <a class="expertise">
-                        <div class="expertise-title"><span>🚀</span> Frontend Development</div>
+                        <div class="expertise-title"><span>🚀</span> Tools & Technologies</div>
                         <div class="progress-container">
                             <div class="progress-text">
-                                <div class="lang">Html</div><div class="lang-range">95%</div>
+                                <div class="lang">Git & Github</div><div class="lang-range">70%</div>
                             </div>
                             <div class="progress-bar">
-                                <div class="progress" style="width: 90%; background-color: #d92cf9;"></div>
+                                <div data-aos="fade-right" class="progress purple" style="width: 70%;"></div>
                             </div>
                         </div>
                         <div class="progress-container">
                             <div class="progress-text">
-                                <div class="lang">Css</div><div class="lang-range">95%</div>
+                                <div class="lang">XAMPP</div><div class="lang-range">90%</div>
                             </div>
                             <div class="progress-bar">
-                                <div class="progress" style="width: 90%;"></div>
+                                <div data-aos="fade-right" class="progress purple" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-text">
+                                <div class="lang">Canvas</div><div class="lang-range">85%</div>
+                            </div>
+                            <div class="progress-bar">
+                                <div data-aos="fade-right" class="progress purple" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-text">
+                                <div class="lang">FormSubmit</div><div class="lang-range">90%</div>
+                            </div>
+                            <div class="progress-bar">
+                                <div data-aos="fade-right" class="progress purple" style="width: 90%;"></div>
                             </div>
                         </div>
                     </a>
@@ -178,27 +285,40 @@
                 <div class="section-title">My <span>Services</span></div>
                 <div class="section-description">What I Build For</div>
                 <div class="services-container">
-                    <a>
-                        <i class="fa fa-book-open fa-2x"></i>
-                        <h2>Custom Poetry Writing</h2>
+                    <a data-aos="fade-left">
+                        <div class="service-title">💻</div>
+                        <h2>Web Design & Development</h2>
+                        <p>I build responsive and visually appealing websites for businesses, schools, and individuals — from concept to launch.</p>
                     </a>
-                    <a>
-                        <i class="fa fa-book-open fa-2x"></i>
-                        <h2>Custom Poetry Writing</h2>
-                        <p>My goal is to deliver high-quality solutions that exceed your expectations. If you are looking for a developer who is not only skilled but also enthusiastic about staying up-to-date with the latest technologies, you are in the right place.
-                            .....Let's collaborate and turn your vision into a reality.</p>
+                    <a data-aos="fade-left">
+                        <div class="service-title">⚙️</div>
+                        <h2>Full-Stack Web Solutions</h2>
+                        <p>Complete front-end and back-end development using my skills & tools. Includes dynamic pages, admin dashboards, and secure databases.</p>
                     </a>
-                    <a>
-                        <i class="fa fa-book-open fa-2x"></i>
-                        <h2>Custom Poetry Writing</h2>
+                    <a data-aos="fade-right">
+                        <div class="service-title">🛍️</div>
+                        <h2>E-commerce Development</h2>
+                        <p>Custom online stores with product management, cart systems, and admin control using PHP, SQL and other modern technologies.</p>
                     </a>
-                    <a>
-                        <i class="fa fa-book-open fa-2x"></i>
-                        <h2>Custom Poetry Writing</h2>
+                    <a data-aos="fade-left">
+                        <div class="service-title">🔐</div>
+                        <h2>Secure Login Systems</h2>
+                        <p>Authentication systems with registration, login, password reset (email/token), and security question fallback.</p>
                     </a>
-                    <a>
-                        <i class="fa fa-book-open fa-2x"></i>
-                        <h2>Custom Poetry Writing</h2>
+                    <a data-aos="fade-left">
+                        <div class="service-title">📩</div>
+                        <h2>Contact Form Integration</h2>
+                        <p>Seamlessly integrated contact forms that deliver messages directly to the admin dashboard or via email (using PHPMailer or third-party email services).</p>
+                    </a>
+                    <a data-aos="fade-right">
+                        <div class="service-title">🧠</div>
+                        <h2>Website Optimization & Maintenance</h2>
+                        <p>Improving site speed, performance, and ensuring your website stays up-to-date, secure, and smooth.</p>
+                    </a>
+                    <a data-aos="fade-right">
+                        <div class="service-title">🌍</div>
+                        <h2>Domain & Hosting Setup</h2>
+                        <p>Assisting clients in connecting custom domains, setting up hosting, and deploying websites live.</p>
                     </a>
                 </div>
             </div>      
@@ -209,7 +329,7 @@
                 <div class="section-title">Featured <span>Projects</span></div>
                 <div class="section-description">Works That Speak</div>
                 <div class="projects-container">
-                    <a class="project">
+                    <a href="" class="project" data-aos="fade-left">
                         <img src="assets/images/app-images/vq-hero2.PNG">
                         <div class="project-details">
                             <div class="project-title">Portfolio Website | Poetry Agency</div>
@@ -218,18 +338,22 @@
                             </p>
                         </div>
                     </a>
-                    <a class="project">
+                    <a href="" class="project" data-aos="fade-left">
                         <img src="assets/images/app-images/Screenshot 2025-10-03 165907.PNG.jpg">
                         <div class="project-details">
                             <div class="project-title">PHP Auth System</div>
-                            <p>If you are looking for a developer who is not only skilled but also enthusiastic about staying up-to-date with the latest technologies, you are in the right place.kkkkkkkkkkkkkkllllllllllll</p>
+                            <p>If you are looking for a developer who is not only skilled but also enthusiastic about staying up-to-date with the latest technologies, you are in the right place.
+                                <span>View <i class="fa fa-arrow-right"></i></span>
+                            </p>
                         </div>
                     </a>
-                    <a class="project">
+                    <a href="" class="project" data-aos="fade-left">
                         <img src="assets/images/app-images/Screenshot 2025-10-03 171910.jpg">
                         <div class="project-details">
                             <div class="project-title">Ecommerce Website | Admin Dashboard</div>
-                            <p>If you are looking for a developer who is not only skilled but also enthusiastic about staying up-to-date with the latest technologies, you are in the right place.kkkkkkkkkkkkkkllllllllllll</p>
+                            <p>If you are looking for a developer who is not only skilled but also enthusiastic about staying up-to-date with the latest technologies, you are in the right place.
+                                <span>View <i class="fa fa-arrow-right"></i></span>
+                            </p>
                         </div>
                     </a>
                 </div>
@@ -240,7 +364,7 @@
             <div class="cert">
                 <div class="cert-container">
                     <div class="cert-text">View my certifications</div>
-                    <div class="cert-btn"><a href="">View <i class="fa fa-arrow-right"></i></a></div>
+                    <div class="cert-btn"><a href="https://github.com/cachecoder01/Certificates/blob/main/" target="_blank">View <i class="fa fa-arrow-right"></i></a></div>
                 </div>
             </div>
         </section>
@@ -252,30 +376,30 @@
                     <div class="section-description">Get in touch</div>
                     <div class="contact-content">
                         <div class="contact-content-child">
-                            <p>Whether you're interested in our works, want to collaborate, or simply have a question, we're always ready to listen. Reach out and we'll get back to you as soon as possible</p>
+                            <p>Whether you're interested in my work, want to collaborate, or simply have a question, I’m always open to connect. Reach out, and I’ll get back to you as soon as possible.</p>
                             <div class="contact-details">
                                 <div class="contact-details-child">
                                     <div class="contact-detail">
                                         <div class="detail"><i class="fas fa-envelope"></i></div>
-                                        <div class="detail-text">cachecoder212@gmail.com</div>
+                                        <div class="detail-text"><a href="mailto:cachecoder212@gmail.com">cachecoder212@gmail.com</a></div>
                                     </div>
                                 </div>
                                 <div class="contact-details-child">
                                     <div class="contact-detail">
                                         <div class="detail"><i class="fa fa-phone"></i></div>
-                                        <div class="detail-text">+234 913 627 9768</div>
+                                        <div class="detail-text"><a href="tel:+234 913 627 9768">+234 913 627 9768</a></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="social-links">
-                                <div>Follow us</div>
+                                <div class="connect">Connect with me:</div>
                                 <ul>
-                                    <li><a href="" target="_blank"><i class="fab fa-github"></i></a></li>
-                                    <li><a href="" target="_blank"><i class="fab fa-tiktok"></i></a></li>
-                                    <li><a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
-                                    <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://github.com/cachecoder01" target="_blank"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="https://www.tiktok.com/@_pyper_02?_t=ZS-90eZnq5oNe4&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/cachecoder02" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="https://www.instagram.com/02_pyper?igsh=emJoZm5wenA4djYx" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://wa.me/+2349136279768" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                                    <li><a href="https://x.com/cachecoder02?t=skGRf9R9h5azUDYV7BzraA&s=08" target="_blank"><i class="fab fa-twitter"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -303,12 +427,20 @@
         </section>
     </main>
 
+    <script>
+ 		window.addEventListener("load", function () {
+ 			const preloader = document.getElementById("preloader");
+ 			preloader.style.opacity = "0";
+		    preloader.style.visibility = "hidden";
+		});
+	</script>
+        
     <script src="assets/js/script.js" defer></script>
     <script src="assets/js/aos.js"></script>
     
     <script>
         AOS.init({
-            duration: 800, // animation duration (ms)
+            duration: 700, // animation duration (ms)
             offset: 120,   // trigger point
             once: true,    // animate only once
         });

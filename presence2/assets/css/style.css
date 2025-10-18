@@ -10,6 +10,41 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+/*preloader start*/
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #121212; /* or your brand color */
+  color: #fff;
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.5s ease;
+}
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #00ffcc; /* accent color */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+.preloader-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/*preloader end*/
+
 html {
     scroll-behavior: smooth;
 }
@@ -27,6 +62,17 @@ input:focus {
 textarea:focus {
     border: thin solid #d92cf9;
     box-shadow: 0px 2px 4px #d92cf9;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
 }
 
 /*==== header ====*/
@@ -158,6 +204,7 @@ nav {
     padding: 12px 20px;
     text-align: center;
     width: 200px;
+    animation: bounce 1.5s infinite;
 }
 .cta-button-vw {
     border: thick solid #d92cf9;
@@ -165,6 +212,7 @@ nav {
     padding: 10px 20px;
     color: #d92cf9;
     text-align: center;
+    animation: bounce 1.5s infinite;
 }
 
 /*=== sections ===*/
@@ -215,7 +263,6 @@ nav {
 
 .about-text {
     position: relative;
-    padding-top: 20px;
 }
 .hello {
     color: white;
@@ -269,21 +316,20 @@ nav {
 }
 
 /*=== Expertise ===*/
-.expertise {
+.expertises {
     width: 85%;
-    margin: auto;
+    margin: 100px auto;
 }
 .expertise-container {
-    margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
-    gap: 30px;
+    margin-top: 50px;
 }
 .expertise-container a {
     background-color: black;
-    width: 300px;
-    height: 300px;
+    width: 320px;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0px 4px 13px #d92cf9;
@@ -296,7 +342,7 @@ nav {
     font-size: 25px;
 }
 .progress-container {
-    width: 90%;
+    width: 95%;
     margin: 10px auto;
 }
 .progress-text {
@@ -325,12 +371,21 @@ nav {
     position: absolute;
     height: 12px;
 }
+.blue {
+    background: linear-gradient(to bottom right, #1a67e3, blue);
+}
+.green {
+    background: linear-gradient(to bottom right, #1ae349, green);
+}
+.purple{
+    background: linear-gradient(to bottom right, #db51f3, #d92cf9);
+}
 
 
 /*=== Services ===*/
 .services {
     width: 85%;
-    margin: 85px auto;
+    margin: 100px auto;
 }
 .services-container  {
     display: flex;
@@ -348,8 +403,8 @@ nav {
 .services-container a:hover {
     box-shadow: 0px 4px 13px #d92cf9;
 }
-.services i {
-    color: #d92cf9;
+.service-title {
+    font-size: 30px;
 }
 .services h2 {
     color: white;
@@ -358,7 +413,7 @@ nav {
 /*==== Projects ====*/
 .projects {
     width: 90%;
-    margin: 50px auto 100px auto;
+    margin: 100px auto;
 }
 .projects-container {
     display: flex;
@@ -429,6 +484,7 @@ nav {
     text-align: center;
     padding: 10px;
     margin: 30px auto;
+    animation: bounce 1.5s infinite;
 }
 
 /*==== Contact ====*/
@@ -451,6 +507,7 @@ nav {
 .contact form {
     width: 60%;
     margin: auto;
+    overflow: hidden;
 }
 .contact input, textarea {
     width: 94%;
@@ -474,15 +531,26 @@ nav {
     display: flex;
     align-items: center;
 }
+.connect {
+    width: 150px;
+    border: thin solid #0c0f17;
+}
+.contact .social-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
 .contact .social-links li {
-    display: inline;
     list-style-type: none;
     padding: 10px;
+    margin-left: 0;
 }
 .contact-details {
     display: flex;
     flex-wrap: wrap;
     margin: 10px auto;
+    flex-direction: column;
+    gap: 10px;
 }
 .contact-details-child {
     flex: 1;

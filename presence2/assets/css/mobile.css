@@ -117,13 +117,10 @@
     .section-description {
         font-size: 30px;
     }
-    .tag {
-        color: #0a0f1f;;
-    }
 
     /*=== About ===*/
     .about {
-        width: 90%;
+        width: 85%;
         margin: 50px auto;
         margin-bottom: 0;
     }
@@ -156,7 +153,7 @@
 
     /*==== Projects ====*/
     .projects-container img {
-        width: 320px;
+        width: 100%;
     }
 
     /*=== cert ===*/
@@ -167,16 +164,12 @@
     /*=== Contact ===*/
     .contact {
         width: 90%;
-        margin: 0 4%;
     }
     .contact-content {
         flex-direction: column;
-    }
-    .contact .tag {
-        color: white;
-    }
-    .contact-info li {
-        width: 100%;
+    }    
+    .connect {
+        width: 230px;
     }
     .copyrights {
         flex-direction: column;
@@ -248,18 +241,14 @@
     .side-menu.open {
         left: 0;
     }
+    .hero-content {
+        width: 90%;
+        margin: 100px auto;
+    }  
 
     /*=== About ===*/
     .about {
         flex-direction: column;
-    }    
-    .about-child {
-        margin-bottom: 70px;
-    }
-
-    /*=== Contact ===*/
-    .contact .submit {
-        width: 88%;
     }
 }
 
