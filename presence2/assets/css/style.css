@@ -535,7 +535,7 @@ nav {
     width: 150px;
     border: thin solid #0c0f17;
 }
-.contact .social-links ul {
+.contact .social-links ul {    
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
@@ -593,4 +593,28 @@ nav {
 }
 span a {
     color: #777676;
+}
+
+.form_message {
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 200px auto;
+}
+.form_message a {
+    color: #0740d0;
+}
+.form_message .green {
+    background-color: greenyellow;
+    border: thin solid green;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: white;
+}
+.form_message span {
+    display: block;
 }

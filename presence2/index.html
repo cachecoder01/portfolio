@@ -34,22 +34,24 @@
 <body>
     <!-- Preloader -->
 	<div id="preloader">
-		<img src="assets/logo/brand-logo.png" alt="brand-logo" class="logo" width="200">
+		<img src="assets/images/app-images/brand-logo.png" alt="brand-logo" class="logo" width="200">
 		<h2 class="preloader-text"><span><a class="navbar-brand" style="font-weight: bold;">...YOUR IDEA, <p style="display: inline;">cached and delivered.</p></a></span><p style="text-align: center; font-weight: bold; font-size: 20px;">Loading ...</p></h2>
 	</div>
 
     <header>
         <nav>
             <div class="nav-child">
-                <div class="brand">
-                    <div class="brand-img">
-                        <img src="assets/images/app-images/brand-logo.png">
+                <a href="index.php">
+                    <div class="brand">                    
+                        <div class="brand-img">
+                            <img src="assets/images/app-images/brand-logo.png">
+                        </div>
+                        <div class="brand-name">
+                            <h1>CacheCodeR</h1>
+                            <span>... Your idea, cached & delivered.</span>
+                        </div>
                     </div>
-                    <div class="brand-name">
-                        <h1>CacheCodeR</h1>
-                        <span>... Your idea, cached & delivered.</span>
-                    </div>
-                </div>
+                </a>
             </div>
             
             <div class="nav-menu-container">
@@ -99,10 +101,10 @@
         <div class="hero">
             <div class="hero-content">
                 <h2 data-aos="fade-left">Hello world<span>.</span></h2>
-                <div class="hero-cta" >
+                <div class="hero-cta">
                     <div class="cta-button-dl"><a href="assets/download/cv.pdf" download>Download Resume</a></div>
                     <div class="cta-button-vw"><a href="assets/download/cv.pdf" target="_blank" class="vw">View Resume</a></div>
-                </div> 
+                </div>
             </div>
         </div>
     </header>
@@ -117,17 +119,17 @@
                         </div>
                     </div> 
                 </div>
-                <div data-aos="fade-left" class="about-child">
+                <div data-aos="fade-left" class="about-child" style="margin-top: 105px;">
                     <div class="about-text">
                         <div class="hello">Hello, it's me</div>
                         <h2 class="name">OLUWOLE EMMANUEL A.</h2>
                         <div class="tag">i'm a <span>Software Engineer | Full-Stack Web Developer</span></div>
                         <p>AKA CacheCoder, a passionate and detail-driven developer dedicated to bringing your ideas to life. Welcome to my portfolio, where i showcase my journey through the world of technology and innovation.</p>
-                        <p>If you are looking for a developer who is not only skilled but also enthusiastic about staying up-to-date with the latest technologies, you are in the right place. My goal is to deliver high-quality solutions that exceed your expectations.</p>
+
                         <p>.....Let's collaborate and turn your vision into a reality.</p>
-                        <div class="cta-button">
+                        <div class="cta-button" data-aos="fade-left" data-aos-duration="1800">
                             <div class="cta-button-about works"><a href="#Projects">My works <i class="fa fa-arrow-right"></i></a></div>
-                            <div class="cta-button-about contact"><a href="#Contact">Contact me <i class="fa fa-arrow-right"></i></a></div> 
+                            <div class="cta-button-about contact"><a href="#Contact">Contact <span>me</span> <i class="fa fa-arrow-right"></i></a></div> 
                         </div>
                     </div>
                 </div>             
@@ -136,10 +138,12 @@
 
         <section id="Expertise">
             <div class="expertises">
-                <div class="section-title">Technical <span>Expertise</span></div>
-                <div class="section-description">My Stack & Tools</div>
+                <div data-aos="fade-right">
+                    <div class="section-title">Technical <span>Expertise</span></div>
+                    <div class="section-description">My Stack & Tools</div>
+                </div>
                 <div class="expertise-container">
-                    <a class="expertise">
+                    <a class="expertise" data-aos="fade-left">
                         <div class="expertise-title"><span>🎨</span> Frontend Development</div>
                         <div class="progress-container">
                             <div class="progress-text">
@@ -190,7 +194,7 @@
                             </div>
                         </div>
                     </a>
-                    <a class="expertise">
+                    <a class="expertise" data-aos="fade-left">
                         <div class="expertise-title"><span>⚡</span> Backend Development</div>
                         <div class="progress-container">
                             <div class="progress-text">
@@ -241,7 +245,7 @@
                             </div>
                         </div>
                     </a>
-                    <a class="expertise">
+                    <a class="expertise" data-aos="fade-left">
                         <div class="expertise-title"><span>🚀</span> Tools & Technologies</div>
                         <div class="progress-container">
                             <div class="progress-text">
@@ -282,8 +286,10 @@
 
         <section id="Services">
             <div class="services">
-                <div class="section-title">My <span>Services</span></div>
-                <div class="section-description">What I Build For</div>
+                <div data-aos="fade-down">
+                    <div class="section-title">My <span>Services</span></div>
+                    <div class="section-description">What I Build For</div>
+                </div>
                 <div class="services-container">
                     <a data-aos="fade-left">
                         <div class="service-title">💻</div>
@@ -300,17 +306,17 @@
                         <h2>E-commerce Development</h2>
                         <p>Custom online stores with product management, cart systems, and admin control using PHP, SQL and other modern technologies.</p>
                     </a>
-                    <a data-aos="fade-left">
+                    <a data-aos="fade-up">
                         <div class="service-title">🔐</div>
                         <h2>Secure Login Systems</h2>
                         <p>Authentication systems with registration, login, password reset (email/token), and security question fallback.</p>
                     </a>
-                    <a data-aos="fade-left">
+                    <a data-aos="fade-up">
                         <div class="service-title">📩</div>
                         <h2>Contact Form Integration</h2>
                         <p>Seamlessly integrated contact forms that deliver messages directly to the admin dashboard or via email (using PHPMailer or third-party email services).</p>
                     </a>
-                    <a data-aos="fade-right">
+                    <a data-aos="fade-up">
                         <div class="service-title">🧠</div>
                         <h2>Website Optimization & Maintenance</h2>
                         <p>Improving site speed, performance, and ensuring your website stays up-to-date, secure, and smooth.</p>
@@ -326,14 +332,16 @@
 
         <section id="Projects">
             <div class="projects">
-                <div class="section-title">Featured <span>Projects</span></div>
-                <div class="section-description">Works That Speak</div>
+                <div data-aos="fade-down">
+                    <div class="section-title">Featured <span>Projects</span></div>
+                    <div class="section-description">Works That Speak</div>
+                </div>
                 <div class="projects-container">
                     <a href="" class="project" data-aos="fade-left">
                         <img src="assets/images/app-images/vq-hero2.PNG">
                         <div class="project-details">
-                            <div class="project-title">Portfolio Website | Poetry Agency</div>
-                            <p>if you are looking for a developer who is not only skilled but also enthusiastic about staying up-to-date with the latest technologies. this is not a mem, this is a true life story.
+                            <div class="project-title">Business Website | Poetry Agency</div>
+                            <p>A modern poetry platform with a clean UI, admin dashboard, and like/share system, built to help poets showcase and engage their audience seamlessly.
                                 <span>View <i class="fa fa-arrow-right"></i></span>
                             </p>
                         </div>
@@ -341,8 +349,8 @@
                     <a href="" class="project" data-aos="fade-left">
                         <img src="assets/images/app-images/Screenshot 2025-10-03 165907.PNG.jpg">
                         <div class="project-details">
-                            <div class="project-title">PHP Auth System</div>
-                            <p>If you are looking for a developer who is not only skilled but also enthusiastic about staying up-to-date with the latest technologies, you are in the right place.
+                            <div class="project-title">PHP Auth System | SafeLoginSystem</div>
+                            <p>A secure PHP-based login and registration system with password reset, designed for simplicity, reliability, and smooth user access.
                                 <span>View <i class="fa fa-arrow-right"></i></span>
                             </p>
                         </div>
@@ -350,8 +358,35 @@
                     <a href="" class="project" data-aos="fade-left">
                         <img src="assets/images/app-images/Screenshot 2025-10-03 171910.jpg">
                         <div class="project-details">
-                            <div class="project-title">Ecommerce Website | Admin Dashboard</div>
-                            <p>If you are looking for a developer who is not only skilled but also enthusiastic about staying up-to-date with the latest technologies, you are in the right place.
+                            <div class="project-title">Admin Dashboard | FlexDash</div>
+                            <p>A dynamic and responsive admin dashboard for managing users, analytics, and data, featuring clean design and full backend integration in PHP and MySQLi.
+                                <span>View <i class="fa fa-arrow-right"></i></span>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="project" data-aos="fade-left">
+                        <img src="assets/images/portfolio/shik-cart.PNG">
+                        <div class="project-details">
+                            <div class="project-title">E-commerce | Shik.Stitches</div>
+                            <p>A stylish eCommerce site for a crochet clothing brand, showcasing trendy crochet wears with easy navigation, product display, and customer-friendly design.
+                                <span>View <i class="fa fa-arrow-right"></i></span>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="project" data-aos="fade-left">
+                        <img src="assets/images/portfolio/goodbrains.PNG">
+                        <div class="project-details">
+                            <div class="project-title">School Website | Good Brains Diamond School</div>
+                            <p>A modern school website featuring academic info, gallery, contact form, and a clean layout that reflects learning and excellence.
+                                <span>View <i class="fa fa-arrow-right"></i></span>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="project" data-aos="fade-left">
+                        <img src="assets/images/portfolio/portify1.PNG">
+                        <div class="project-details">
+                            <div class="project-title">SaaS Tool | Portify</div>
+                            <p>A sleek personal portfolio builder that helps users create and manage professional website effortlessly with responsive and creative design.
                                 <span>View <i class="fa fa-arrow-right"></i></span>
                             </p>
                         </div>
@@ -372,26 +407,30 @@
         <section id="Contact">
             <div class="contact-background">
                 <div class="contact">
-                    <div class="section-title">Contact <span>Me</span></div>
-                    <div class="section-description">Get in touch</div>
+                    <div data-aos="fade-right" data-aos-duration="900">
+                        <div class="section-title">Contact <span>Me</span></div>
+                        <div class="section-description">Get in touch</div>
+                    </div>
                     <div class="contact-content">
                         <div class="contact-content-child">
-                            <p>Whether you're interested in my work, want to collaborate, or simply have a question, I’m always open to connect. Reach out, and I’ll get back to you as soon as possible.</p>
+                            <div data-aos="fade-right">
+                                <p>Whether you're interested in my work, have a project idea, or want to collaborate, I’m always open to connect. Reach out, and I’ll get back to you as soon as possible.</p>
+                            </div>
                             <div class="contact-details">
-                                <div class="contact-details-child">
-                                    <div class="contact-detail">
+                                <div class="contact-details-child" data-aos="fade-right">
+                                    <div class="contact-detail" >
                                         <div class="detail"><i class="fas fa-envelope"></i></div>
                                         <div class="detail-text"><a href="mailto:cachecoder212@gmail.com">cachecoder212@gmail.com</a></div>
                                     </div>
                                 </div>
-                                <div class="contact-details-child">
+                                <div class="contact-details-child" data-aos="fade-right">
                                     <div class="contact-detail">
                                         <div class="detail"><i class="fa fa-phone"></i></div>
                                         <div class="detail-text"><a href="tel:+234 913 627 9768">+234 913 627 9768</a></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="social-links">
+                            <div class="social-links" data-aos="fade-right">
                                 <div class="connect">Connect with me:</div>
                                 <ul>
                                     <li><a href="https://github.com/cachecoder01" target="_blank"><i class="fab fa-github"></i></a></li>
@@ -404,10 +443,18 @@
                             </div>
                         </div>
                         <div class="contact-content-child">
-                            <form>
-                                <input type="name" name="name" placeholder="Enter your name">
-                                <input type="email" name="email" placeholder="Enter your email">
-                                <textarea name="message" placeholder="Enter text"></textarea>
+                            <form data-aos="fade-left" action="https://api.web3forms.com/submit" method="POST">
+
+                                <input type="hidden" name="access_key" value="ae6662e9-021c-4199-957a-00e0e5809fc4">
+                                <!-- Honeypot Spam Protection -->
+                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                                
+                                <input type="text" name="name" placeholder="Enter your name" required>
+                                <input type="email" name="email" placeholder="Enter your email" required>
+                                <textarea name="message" placeholder="Enter text" required></textarea>
+
+                                <input type="hidden" name="redirect" value="http://localhost/presence/presence2/thanks.html">
+
                                 <input type="submit" class="submit" value="submit">
                             </form>
                         </div>
@@ -439,10 +486,19 @@
     <script src="assets/js/aos.js"></script>
     
     <script>
-        AOS.init({
-            duration: 700, // animation duration (ms)
-            offset: 120,   // trigger point
-            once: true,    // animate only once
+        document.addEventListener('DOMContentLoaded', function() {
+        if (window.innerWidth < 768) {
+            document.querySelectorAll('[data-aos]').forEach(el => {
+                el.removeAttribute('data-aos');
+            });
+        } else {
+            AOS.init({
+                duration: 900, // animation duration (ms)
+                offset: 100,   // trigger point
+                once: false,    // animate only once
+                easing: 'ease-in-out',
+            });
+        }
         });
     </script>
 

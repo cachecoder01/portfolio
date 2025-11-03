@@ -11,32 +11,24 @@ include '../db/db_connect.php';
 	$pass=trim($_POST["pass"]);
 	$pass=htmlspecialchars(strip_tags($pass), ENT_QUOTES, 'UTF-8');
 
-	$stmt=$conn->prepare("SELECT * FROM reginfo");
-	$stmt->execute();
+	$pass_hash = '$2y$10$QWPHZlcDHucTjTAc/KbQj.gwOyp8pFJhfjVBstJzgoBK49NBLNSDG';
+	
+	$saved_email = 'cachecoder212@gmail.com';
 
-	$result=$stmt->get_result();
-	if ($result->num_rows>0) {
-		while ($row = $result->fetch_assoc()) {
-			$storedHash=$row["password"];
-
-			if (password_verify($pass, $storedHash)) {
+	if (password_verify($pass, $pass_hash) AND $email == $saved_email) {
 
 				$_SESSION['admin_logged_in'] = true;
 				$_SESSION['email']=$email;
 				header('location: pannel.php');
 				exit();
 		
-			}else {
-				echo "<script>
-						alert('Invalid Login');
-						window.location = document.referrer;
-					  </script>";
-			}
-		}
-	}else{
-		echo "Account not found";
+	}else {
+		echo "<script>
+				alert('Invalid Login');
+				window.location = document.referrer;
+			</script>";
 	}
-
+	
 }else{
 	die("Invalid Request");
 }

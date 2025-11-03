@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
 
-		<title>
-			Signin
-		</title>
+		<title>Admin | Signin</title>
 
-		<link rel="shortcut icon" type="image/icon" href="../assets/logo/brand-logo.png"/>
+		<link rel="shortcut icon" type="image/icon" href="../assets/images/app-images/brand-logo.png">
 
-		<style type="text/css">
- 			body {background-color: #eee; font-family: Poppins, sans-serif;}
- 			table {background: white; border-radius: 8px; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); margin-top: 100px;}
- 			input,textarea {font-color: white; width: 300px; background: #eee; height: 30px; padding: 5px; border: thin solid #edd; border-radius: 2px; outline: none;}
-    		input.a {width: 310px; height: 30px; background: #d92cf9; border: thin solid #ffe0e1; outline: none;}
- 		</style>
 	</head>
 	<body>
-		<table align="center">
-			<tr>
-				<td align="center">
-					<br /><img src="../assets/logo/brand-logo.png" alt="logo" width="80"><br />
-					<d class="navbar-brand" style="font-size: 16px;">...YOUR IDEA, <p style="display: inline; font-size: 13px;">cached and delivered.</p></d>
-				</td>
-			</tr>
-			<tr>
-				<td style="padding: 20px">
-					<form method="POST" action="pannel_loginaccess.php">
-						<label>Email</label><br>
-						<input type="email" name="email" placeholder="Email" required><br><br>
-						<label>Password</label><br>
-						<input type="password" name="pass" placeholder="Password" required=""><br><br>
-						<input class="a" type="submit" value=" LOGIN ">
-					</form>
-				</td>
-			</tr>
-		</table>
+
+		<section id="Login">
+			<div class="login">
+				<table>
+					<tr>
+						<td>
+							<div class="img">
+								<br /><img src="../assets/images/app-images/brand-logo.png" alt="logo"><br />
+								<div class="navbar-brand" style="font-size: 16px;">...YOUR IDEA, <p style="display: inline; font-size: 13px;">cached and delivered.</p></div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td style="padding: 20px">
+							<form method="POST" action="pannel_loginaccess.php">
+								<label>Email</label><br>
+								<input type="email" name="email" placeholder="Email" required><br><br>
+								<label>Password</label><br>
+								<input type="password" name="pass" placeholder="Password" required=""><br><br>
+								<input class="submit" type="submit" value=" LOGIN ">
+							</form>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+		
 	</body>
 </html>

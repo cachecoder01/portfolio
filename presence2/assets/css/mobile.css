@@ -1,4 +1,29 @@
-@media only screen and (max-width: 700px) {
+@media (max-width: 360px) {
+    html {
+        font-size: 103px;
+    }
+    .contact .social-links {
+        width: 300px;
+    }
+    .cta-button-dl a {
+        font-size: 15px;
+    }
+    .cta-button-vw a {
+        font-size: 15px;
+    }
+    
+    .works a {
+        font-size: 15px;
+    }
+    .contact a {
+        font-size: 15px;
+    }
+    .contact span {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
     /*==== mobile header ====*/
     .hero {
         background-position: top;
@@ -181,6 +206,10 @@
         padding: 0;
     }
 
+    .form_message {
+        width: 75%;
+        padding: 15px;
+    }
 }
 
 @media only screen  and (max-width: 1030px) {
@@ -249,6 +278,11 @@
     /*=== About ===*/
     .about {
         flex-direction: column;
+    }
+
+    .form_message {
+        width: 75%;
+        padding: 15px;
     }
 }
 
