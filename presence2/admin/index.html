@@ -13,31 +13,32 @@
 	</head>
 	<body>
 
-		<section id="Login">
-			<div class="login">
-				<table>
-					<tr>
-						<td>
-							<div class="img">
-								<br /><img src="../assets/images/app-images/brand-logo.png" alt="logo"><br />
-								<div class="navbar-brand" style="font-size: 16px;">...YOUR IDEA, <p style="display: inline; font-size: 13px;">cached and delivered.</p></div>
+		<main>
+			<section id="Login">
+				<div class="form-container">
+					<div class="img">
+						<img src="../assets/images/app-images/brand-logo.png" alt="logo"><br />
+						<p class="navbar-brand">...YOUR IDEA, <span style="font-size: 13px;">cached and delivered.</span></p>
+					</div>
+					<form method="POST" action="pannel_loginaccess.php">
+						<fieldset>
+							<legend>Signin</legend>
+							<div class="form-group">
+								<label>Email</label>
+								<input type="email" name="email" placeholder="Enter User ID" required>
 							</div>
-						</td>
-					</tr>
-					<tr>
-						<td style="padding: 20px">
-							<form method="POST" action="pannel_loginaccess.php">
-								<label>Email</label><br>
-								<input type="email" name="email" placeholder="Email" required><br><br>
-								<label>Password</label><br>
-								<input type="password" name="pass" placeholder="Password" required=""><br><br>
+							<div class="form-group">
+								<label>Password</label>
+								<input type="password" name="pass" placeholder="Enter Password" required="">
+							</div>
+							<div class="form-group">
 								<input class="submit" type="submit" value=" LOGIN ">
-							</form>
-						</td>
-					</tr>
-				</table>
-			</div>
-		</section>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</section>
+		</main>
 		
 	</body>
 </html>

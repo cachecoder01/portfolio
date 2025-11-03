@@ -23,31 +23,6 @@ if (! isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tr
 		<link rel="stylesheet" type="text/css" href="css/style.css">		
     	<link rel="stylesheet" href="../assets/fonts/css/all.min.css">
 
-		<style type="text/css">
-
-.menu {
-	width: 100%; margin-top: 40px;  font-size: x-small;
-}
-@media only screen and (max-width: 768px){
-	.profile {
-		margin-top: 3px;
-	}
-	.menu {
-		margin-top: 75px;
-	}
-}
-
-.tabcontent {
-	color: white;
-	display: none;
-	padding: 200px 0;
-	height: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;  
-	}
-		</style>
-		
 <body>
 
 	<header>
@@ -91,29 +66,25 @@ if (! isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tr
 		<main>
 
 			<section id="Project" class="tabcontent">
-				<div>
+				<div class="form-container">
 					<form method="POST" action="portfolio.php" enctype="multipart/form-data">
 						<fieldset>
 							<legend>portfolio</legend>
-							<div class="input-style">
-								<input type="number" min="1" name="id" placeholder="Input Id" required="">
-							<div>
-							<div class="input-style">
+							<div class="form-group">
 								<input type="text" name="title" placeholder="Input Title eg. e-cormmerce">
-							<div>								
-							<div class="input-style">
-								<input type="text" name="discription" placeholder="Input Description About Project" required="">
-							<div>
-							<div class="input-style">
+							</div>
+							<div class="form-group">
 								<input type="file" name="img" accept="image/*" required="">
-							<div>
-							<div class="input-style">
+							</div>
+							<div class="form-group">
+								<textarea type="text" name="discription" placeholder="Input Description About Project" required=""></textarea>
+							<div>							
+							<div class="form-group">
 								<input type="text" name="link" placeholder="Input Project Link">
-							<div>
-								
-								<div class="center">
-									<input class="submit" type="submit" value="submit">
-								</div>
+							</div>
+							<div class="form-group">
+								<input class="submit" type="submit" value="submit">
+							</div>
 						</fieldset>
 					</form>
 				</div>

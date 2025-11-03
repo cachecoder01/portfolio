@@ -1,30 +1,70 @@
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: Poppins, sans-serif;
 	font-size: 16px;
 	color: #676a81;
     margin: 0;
 	background-color: #eee;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
 }
 * {
-	box-sizing: border-box
+	box-sizing: border-box;
 }
-
-.center {
-	text-align: center;
-}
-
 a {
 	text-decoration: none;
 	color: inherit;
 }
 
-/*==== LOGIN ====*/
-table {
-	background: white;
-	border-radius: 8px;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	margin: 100px auto;
+/*=== Form ===*/
+.form-container {
+	background-color: #fff;
+	width: 100%;
+	max-width: 400px;
+	padding: 25px;
+	border-radius: 10px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
+legend {
+	text-align: center;	
+	color: #d92cf9;
+	text-transform: uppercase;
+	font-size: 20px;
+    font-weight: 600;
+}
+.form-group {
+	margin: 10px auto;
+}
+label {
+	display: block;
+	margin-bottom: 6px;
+	font-weight: bold;
+	color: #374151;
+}
+input, textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #d1d5db;
+	border-radius: 6px;
+	outline: none;
+	font-size: 15px;
+}
+textarea {
+	height: 100px;
+}
+input:focus, textarea:focus {
+	border-color: #d92cf9;
+	box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+input.submit {
+    text-transform: uppercase;
+	background-color: #d92cf9;
+    color: white;
+    border: #d92cf9;
+}
+
+/*==== LOGIN ====*/
 .img {
 	width: 75%;
 	margin: auto;
@@ -32,15 +72,6 @@ table {
 }
 .img img {
 	width: 80px;
-}
-input {
-	width: 300px;
-	background: #eee; 
-	height: 30px; 
-	padding: 5px;
-	border: thin solid #edd; 
-	border-radius: 2px;
-	outline: none;
 }
 
 /*=== header ===*/
@@ -126,7 +157,8 @@ nav {
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
 	z-index: 9;
 	border-radius: 2px;
-	padding: 3px;}
+	padding: 3px;
+}
 .dropdown-content a {
 	color: white;
 	padding: 3px;
@@ -165,113 +197,50 @@ nav {
 	color: white;
 	display: none;
 	justify-content: center;
-	margin: 100px auto 0px;
-	border: thin solid #15161D;
+	margin-top: 200px;
 }
 
-/*=== Panel Form ===*/
-form {
-	background-color: white;
-	border-radius: 10px;
-	padding: 10px;
-	width: 300px;
-}
-legend {
-	text-align: center;	
-	color: #d92cf9;
-	text-transform: uppercase;
-	font-size: 20px;
-    font-weight: 600;
-}
-input
-
-/*nav {
-	margin: 0;
-	top: 0;
-	background-color: #fff;
-	position: fixed;
-	width: 100%;
-	box-shadow: 0 3px 15px rgba(0,0,0,.2);
-	height: 70px;
-	padding: 0 ;
-}
-nav a {
-	display: inline-block;
-    color: #d92cf9;
-    font-size: 20px;
-    font-weight: 600;
-    padding: 23px 0px 47px;
-    text-transform: uppercase;
-}
-nav p {
-	font-weight: 600;
-	font-size: 15px;
-	color: #555;
-}*/
-
-
-
-
-table {
-	vertical-align: top;
-	padding: 10px;
-	border-radius: 8px;
-	box-shadow: none;
-}
-
-input select {
-	outline: none;
-	padding: 8px;
-	margin: 10px;
-	background-color: #eee;
-	border: thin solid #edd;
-	border-radius: 3px;
-}
-input.submit {
-    text-transform: uppercase;
-	background-color: #d92cf9;
-    color: white;
-    font-size: 18px;
-    border: #d92cf9;
-}
-
-.accordion {
-	background-color: white;
-	color: black;
-	cursor: pointer;
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	border: none;
-	text-align: left;
-	outline: none; transition: 0.4s;
-}
-.panel {
-	padding: 0 5px;
-	display: none;
-	background-color: white;
-	overflow: auto;
-}
-.contact_sms {
-	padding: 0px;
-	font-size: small;
-	color: #555;
-	width: 100%;
-	overflow: scroll;
-	height: 500px;
-}
-.client-image {
-  	width: 50px;
-  	height: 50px;
-	border-radius: 50%;
-	margin-right: 15px;
-}
-@media only screen and (max-width: 768px) {
-	.contact_sms {width: 300px;}
-	.profile {
-		margin-top: 3px;
+/*==== Mobile View ====*/
+@media (max-width: 400px) {	
+	.brand h1 {
+		font-size: 1.5rem;
 	}
-	.menu {
-		margin-top: 75px;
+	.profile {
+		margin-right: 10px;
+	}
+	.form-container {
+		margin: auto;
+		padding: 20px;
+		max-width: 300px;
+	}
+	.tabcontent {
+		margin-top: 150px;
+	}
+}
+@media (max-width: 768px) {
+	.brand-logo {
+		width: 50px;
+		height: 50px;
+	}
+	.brand-logo img {
+		width: 50px;
+	}
+	.user i {
+		font-size: 25px;
+	}
+	.email {
+		display: none;
+	}
+	.dropbtn i {
+		padding: 10px;
+	}
+	.dropdown-content {
+		right: 10px;
+	}
+	.nav-menu {
+		margin: 10px auto 5px;
+	}
+	.tablink {
+  		padding: 10px 8px;
 	}
 }

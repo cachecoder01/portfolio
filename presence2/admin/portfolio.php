@@ -1,13 +1,36 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="shortcut icon" href="../assets/images/app-images/brand-logo.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/mobile.css">
+
+    <title>CacheCodeR | Admin</title>
+</head>
+<body>
+	<?php
+session_start();
+if (! isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) {
+	header('location: index.html');
+	exit();
+}
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	
 include '../db/db_connect.php';
 
-	$id=trim(intval($_POST["id"]));
-	$id=filter_var($id, FILTER_VALIDATE_INT);
-	$title=htmlspecialchars(strip_tags($_POST["title"]), ENT_QUOTES, 'UTF-8');
-	$desc=htmlspecialchars(strip_tags($_POST["discription"]), ENT_QUOTES, 'UTF-8');
-	$url=htmlspecialchars(strip_tags($_POST["link"]), ENT_QUOTES, 'UTF-8');
+	$title = trim($_POST["title"]);
+	$title = htmlspecialchars(strip_tags($title), ENT_QUOTES, 'UTF-8');
+
+	$desc = trim($_POST["discription"]);
+	$desc = htmlspecialchars(strip_tags($desc), ENT_QUOTES, 'UTF-8');
+
+	$url = trim($_POST["link"]);
+	$url=htmlspecialchars(strip_tags($url), ENT_QUOTES, 'UTF-8');
 
 	$img="";
 	if (isset($_FILES["img"]) && $_FILES["img"]["error"] === 0) {
@@ -43,35 +66,25 @@ if (isset($_FILES["img"]) && $_FILES["img"]["error"] === 0) {
 		exit();
 };
 
-	$stmt=$conn->prepare("SELECT * FROM portfolio WHERE id=?");
-	$stmt->bind_param("i", $id);
-	$stmt->execute();
-	
-	$result=$stmt->get_result();
-	if ($result->num_rows>0) {
-		while ($row = $result->fetch_assoc()) {
-			
-			$stmt=$conn->prepare("UPDATE portfolio SET title=?, description=?, img=?, url=? WHERE id=?");
-			$stmt->bind_param("ssssi", $title, $desc, $img, $url, $id);
-		}
-	
-	}else {
-		$stmt=$conn->prepare("INSERT INTO portfolio(title, description, img, url)VALUE(?, ?, ?, ?)");
+		$stmt=$conn->prepare("INSERT INTO portfolio(title, description, image, link)VALUE(?, ?, ?, ?)");
 		$stmt->bind_param("ssss", $title, $desc, $img, $url);
-	}
 	
-	$result=$stmt->execute();
+		$result=$stmt->execute();
 	
-	if ($result) {
-	echo "<script>
-			alert('portfolio updated');
-			window.location = document.referrer;
-		</script>";
-	}else{
-		die("insert failed: " . mysqli_error($conn));
-	}
+		if ($result) {
+			echo "<div class='form_message'>
+        			<div class='green'>Submitted</div>
+        			<div>Project list updated successfully 💪</div>
+        			<div><a href='pannel.php'>OK</a></div>
+    			</div>";
+		}else{
+			die("insert failed: " . mysqli_error($conn));
+		}
 
+	$stmt -> close();
 }else{
 	die("Invalid Request");
 }
 ?>
+</body>
+</html>
