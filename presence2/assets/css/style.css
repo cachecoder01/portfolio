@@ -289,6 +289,7 @@ nav {
 .about .cta-button {
     display: flex;
     width: 70%;
+    gap: 20px;
 }
 .cta-button-about {
     flex: 1;
@@ -301,7 +302,6 @@ nav {
     border: 8px solid #d92cf9;
     background-color: #d92cf9;
     width: 50%;
-    margin: 10px;
     text-align: center;
     padding: 10px;
     box-shadow: 0px 1px 10px #d92cf9;
@@ -309,7 +309,6 @@ nav {
 .about .contact {
     border: 8px solid #d92cf9;
     width: 50%;
-    margin: 10px;
     text-align: center;
     padding: 10px;
     box-shadow: 0px 1px 10px #d92cf9;

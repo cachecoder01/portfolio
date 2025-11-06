@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta property="og:title" content="Cachecoder | Web Developer" />
+    <meta property="og:description" content="Portfolio of Oluwole Emmanuel Adewole - Software Engineer building scalable web solutions." />
+    <meta property="og:image" content="https://cachecoder.site/assets/images/app-images/og.png" />
+    <meta property="og:url" content="https://cachecoder.site" />
+
+
     <link rel="shortcut icon" href="assets/images/app-images/brand-logo.png">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
