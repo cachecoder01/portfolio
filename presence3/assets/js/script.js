@@ -15,4 +15,3 @@ closeBtn.addEventListener('click', () => {
   document.body.classList.remove('noscroll'); // re-enable scroll
 });
 /*==== /hamburger menu ====*/
-
